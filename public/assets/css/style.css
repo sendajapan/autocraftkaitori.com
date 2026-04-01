@@ -906,6 +906,10 @@ a:hover {
   text-decoration: none;
 }
 
+#stock{
+  margin-bottom: 90px;
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 1399px) {
 
@@ -933,7 +937,7 @@ a:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   section#hero{
-    height: 480px !important;
+    height: 480px;
   }
   /* .car-bg{
     height: 58%;
@@ -957,7 +961,7 @@ a:hover {
     height: 90% !important;
   } */
   section#hero{
-    height: 300px !important;
+    height: 300px;
   }
   h1,
   .h1 {
@@ -1068,6 +1072,9 @@ a:hover {
   --bs-btn-close-focus-shadow: none;
 }
 
+/* #search{
+  margin-bottom: 90px;
+} */
 
 .stockbar h2{
 font-size: 55px;
@@ -1269,230 +1276,10 @@ padding: 15px 55px;
 .pattern-overlay.pattern-left {
   bottom: 0px;
 }
-
-
-@media screen and (max-width: 1399px) {
-  .year-tag { 
-    top: 196px;
-  }
-
-  .year{
-    width: 100%;
-  }
-}
-
-
-@media screen and (max-width: 1199px) {
- 
-
- 
-
-  .card-text {
-    font-size: 0.8rem !important;
-  }
-
-  .vehicle_inquiry h4{
-    font-size: 19px;
-  }
-
-  .vehicle_inquiry button{
-    font-size: 15px;
-  }
-
-  .year-tag { 
-    top: 153px;
-  }
-
-  .card-stock-page .card-text {
-    font-size: 0.8rem !important;
-  }
-
-  .card-stock-page .card-title {
-    font-size: 1.2rem !important;
-  }
-
-  .footer-main div {
-    padding-right: 05px;
-    padding-left: 05px;
-  }
-
-  .footer-makes{
-    padding-left: 20px !important;
-  }
-
-  a.nav-link,
-.nav-button {
-  font-size: 1.125rem;
-  
-}
-
-}
-
-
-@media screen and (max-width: 991px) {
-  .navbar-nav .nav-link{
-    color: #000;
-  }
-  /* .car-bg{
-    height: 40%;
-  } */
-
-  .contact-info{
-    margin-top: 45px;
-    background-position: center;
-  }
-
-  .stock-filter{
-    margin-top: 40px;
-  }
-
-  .card-title{
-    font-size: 1.25rem;
-  }
-
-  .hero-content .hero {
-    font-size: 2.5rem;
-  }
-
-  .year-tag { 
-    top: 94px;
-  }
-
-  .services-components{
-    margin-bottom: 23px;
-  }
-
-  .footer-main h4{
-    font-size: 1.25rem;
-  }
-
-  .footer-contact-info{
-    font-size: 0.75rem;
-  }
-
-  .footer-nav .nav-link{
-    font-size: 1rem;
-  }
-
-}
-
-
-@media screen and (max-width: 767px) {
-  .stock-filter{
-    padding: 6px 15px;
-  }
-  
-  .card-text {
-    font-size: 1rem !important;
-  }  
-
-  #search{
-    margin-top: 30px;
-  }
-
-  .year-tag { 
-    top: 8px;
-  }
-
-  .year-tag-stock { 
-    top: 8px !important;
-  }
-
-  .hero-content {
-      padding-top: 0px !important;
-    }
-    section#hero{
-      padding-top: 44px;
-
-    }  
-
-  .footer-contact-info{
-    font-size: 0.75rem;
-    padding-top: 39px;
-  }
-
-  .footer-makes{
-    padding-left: 0px !important;
-  }
-
-
-}
-
-
-@media screen and (max-width: 575px) {
-  .search-block{
-    padding: 40px 0 !important;
-  }
-  .top_banner{
-    padding: 85px 0 43px;
-  }
-
-  .detail_box{
-    padding-left: 30px !important;
-  }
-
-  .product-large-slider img{
-    height: auto !important;
-  }
-
-  .contact-info{
-    margin-top: 45px;
-  }
-
-  .stock-filter .form-group {
-    flex-direction: column;
-    align-items: normal !important;
-  }
-
-  .stock-filter .form-group label {
-    margin-bottom: 10px;
-  }
-  
-  .swiper-button-next.rental-arrow {
-  top: 108%;
-  right: 30% !important;
-}
-
-.swiper-button-prev.rental-arrow {
-  top: 108%;
-  left: 30% !important;
-
-}
-
-  .footer-container {
-    padding-left:20px;
-  }
-
-  .footer-main {
-    padding-bottom: 50px;
-  }
-
-}
-
-
-@media screen and (max-width: 375px) {
-  
-    h2{
-      font-size: 1.375rem;
+.navbar-brand img {
+        width: 315px ;
     }
 
-}
-
-
-@media screen and (max-width: 462px) {
-  .navbar-brand img{
-    width:230px !important;
-  }
-    .btn{
-      font-size: 1.188rem;
-    }
-    .hero-paragraph{
-      margin-bottom: 20px !important;
-    }
-    .search-block {
-      padding: 40px 50px 40px 50px !important;
-    }
-}
 
 
 
@@ -1570,15 +1357,11 @@ a.nav-link:hover {
     position: static;
     margin-top: 0;
   }
-  .hero-content{
-    padding-top: 0px;
-    padding-bottom: 50px;
-  }
+
   #rental{
     padding-top: 0;
   }
   #search{
-    margin-bottom: 0 !important;
     padding: 0 14px;
   }
   .pattern-overlay.pattern-right {
@@ -1589,7 +1372,6 @@ a.nav-link:hover {
   }
 
   section#hero{
-    padding-top: 40px;
     height:1000px;
   }
   #form{
@@ -2226,14 +2008,285 @@ New Vehicle Card Styles (matching image design)
   font-size: 14px;
 }
 
+@media screen and (max-width: 1499px) and (min-width: 991px) {
+.stockbar h4{
+    font-size: 15px;
+  }
+  .vehicle-dimensions{
+    font-size: 12px;
+  }
+  .spec-label{
+    font-size: 10px;
+  }
+
+  .view-details-link, .view-details-link i{
+    font-size: 13px;
+  }
+
+  .spec-value{
+        font-size: 12px;
+
+  }
+}
+
+@media screen and (max-width: 1499px) {
+    a.nav-link{
+    font-size: 17px;
+  }
+  
+   .navbar-brand img{
+    width:280px ;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .year-tag { 
+    top: 196px;
+  }
+
+  .year{
+    width: 100%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1199px) {
+.process-content{
+  margin-top: 0 !important;
+}
+
+
+
+
+ a.nav-link{
+    font-size: 15px;
+  }
+
+  .navbar-brand img {
+        width: 200px ;
+    }
+ 
+
+  .card-text {
+    font-size: 0.8rem !important;
+  }
+
+  .vehicle_inquiry h4{
+    font-size: 19px;
+  }
+
+  .vehicle_inquiry button{
+    font-size: 15px;
+  }
+
+  .year-tag { 
+    top: 153px;
+  }
+
+  .card-stock-page .card-text {
+    font-size: 0.8rem !important;
+  }
+
+  .card-stock-page .card-title {
+    font-size: 1.2rem !important;
+  }
+
+  .footer-main div {
+    padding-right: 05px;
+    padding-left: 05px;
+  }
+
+  .footer-makes{
+    padding-left: 20px !important;
+  }
+
+  /* a.nav-link,
+.nav-button {
+  font-size: 1.125rem;
+  
+} */
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+  .detail> p{
+    margin: 15px 0;
+  }
+
+  .navbar-nav .nav-link{
+    color: #000;
+  }
+  /* .car-bg{
+    height: 40%;
+  } */
+
+  .contact-info{
+    margin-top: 45px;
+    background-position: center;
+  }
+
+  .stock-filter{
+    margin-top: 40px;
+  }
+
+  .card-title{
+    font-size: 1.25rem;
+  }
+
+  .hero-content .hero {
+    font-size: 2.5rem;
+  }
+
+  .year-tag { 
+    top: 94px;
+  }
+
+  .services-components{
+    margin-bottom: 23px;
+  }
+
+  .footer-main h4{
+    font-size: 1.25rem;
+  }
+
+  .footer-contact-info{
+    font-size: 0.75rem;
+  }
+
+  .footer-nav .nav-link{
+    font-size: 1rem;
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .stock-filter{
+    padding: 6px 15px;
+  }
+  
+  .card-text {
+    font-size: 1rem !important;
+  }  
+
+  #search{
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .year-tag { 
+    top: 8px;
+  }
+
+  .year-tag-stock { 
+    top: 8px !important;
+  }
+
+  .hero-content {
+      padding-top: 0px !important;
+    }
+
+  .footer-contact-info{
+    font-size: 0.75rem;
+    padding-top: 39px;
+  }
+
+  .footer-makes{
+    padding-left: 0px !important;
+  }
+
+
+}
+
+
+@media screen and (max-width: 575px) {
+  .top_banner{
+    padding: 85px 0 43px;
+  }
+
+  .detail_box{
+    padding-left: 30px !important;
+  }
+
+  .product-large-slider img{
+    height: auto !important;
+  }
+
+  .contact-info{
+    margin-top: 45px;
+  }
+
+  .stock-filter .form-group {
+    flex-direction: column;
+    align-items: normal !important;
+  }
+
+  .stock-filter .form-group label {
+    margin-bottom: 10px;
+  }
+  
+  .swiper-button-next.rental-arrow {
+  top: 108%;
+  right: 30% !important;
+}
+
+.swiper-button-prev.rental-arrow {
+  top: 108%;
+  left: 30% !important;
+
+}
+
+  .footer-container {
+    padding-left:20px;
+  }
+
+  .footer-main {
+    padding-bottom: 50px;
+  }
+
+}
+
+
+@media screen and (max-width: 375px) {
+  
+    h2{
+      font-size: 1.375rem;
+    }
+
+}
+
+
+@media screen and (max-width: 462px) {
+  .navbar-brand img{
+    width:230px !important;
+  }
+    .btn{
+      font-size: 1.188rem;
+    }
+    .hero-paragraph{
+      margin-bottom: 20px !important;
+    }
+    .search-block {
+      padding: 30px !important;
+    }
+}
+
+
 /* Responsive adjustments */
 @media screen and (max-width: 1200px) {
   .clearance-carousel .owl-nav button.owl-prev {
-    left: -30px;
+    left: 35%;
   }
   .clearance-carousel .owl-nav button.owl-next {
-    right: -30px;
+    right: 35%;
   }
+  .clearance-carousel .owl-nav{
+  top: 100%;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -2250,7 +2303,7 @@ New Vehicle Card Styles (matching image design)
   }
   
   .view-details-link {
-    font-size: 13px;
+    font-size: 17px;
   }
   
   .clearance-carousel .owl-nav button.owl-prev {
@@ -2393,9 +2446,11 @@ Vehicles Type Section Styles
 @media screen and (max-width: 768px) {
   .vehicle-types-wrapper {
     gap: 10px;
+    display: block;
   }
   
   .vehicle-type-btn {
+    margin: 5px;
     padding: 10px 18px;
   }
   
@@ -2411,7 +2466,7 @@ Vehicles Type Section Styles
     font-size: 16px;
   }
   
-  .show-all-link {
+  .show-all-link, .show-all-link i {
     font-size: 14px;
   }
 }
@@ -2508,7 +2563,9 @@ Browse by Make Section Styles
 .makes-carousel .owl-nav button i {
   font-size: 16px;
 }
-
+.makes-h{
+  margin-bottom: 50px;
+}
 /* Responsive adjustments for makes section */
 @media screen and (max-width: 1200px) {
   .makes-carousel .owl-nav {
@@ -2519,20 +2576,30 @@ Browse by Make Section Styles
 
 @media screen and (max-width: 992px) {
   .makes-carousel .owl-nav {
-    left: -30px;
-    right: -30px;
+    left: 35%;
+    right: 35%;
   }
   
   #makes h2 {
     font-size: 24px;
   }
+  .makes-carousel .owl-nav{
+    top:125% !important;
+  
+  }
 }
 
+
 @media screen and (max-width: 768px) {
+  .makes-h{
+    display: flex;
+      margin-bottom: 10px;
+
+  }
   .makes-carousel .owl-nav {
     left: 10px;
     right: 10px;
-    top: auto;
+    top: auto !important;
     bottom: -60px;
     transform: none;
     justify-content: center;
@@ -2639,17 +2706,8 @@ About Us Section Styles
     margin-bottom: 30px;
   }
   
-  .about-content h2 {
-    font-size: 32px;
-  }
   
-  .about-content h4 {
-    font-size: 16px;
-  }
-  
-  .about-content p {
-    font-size: 14px;
-  }
+ 
 }
 
 /*----------------------------------------------
@@ -2764,7 +2822,7 @@ box-shadow: 0px 8.31px 27.7px 0px #0000000A;
   }
   
   .process-image {
-    height: 180px;
+    height: 280px;
   }
   
   .process-number {
@@ -2789,7 +2847,7 @@ box-shadow: 0px 8.31px 27.7px 0px #0000000A;
   }
   
   .process-image {
-    height: 150px;
+    height: 230px;
   }
   
   .process-content {
@@ -2960,7 +3018,7 @@ Newsletter Section Styles
   color: #ffffff;
   opacity: 0.9;
   margin-bottom: 0;
-  max-width: 400px;
+  max-width: 420px;
   font-weight: 200;
 }
 
@@ -3023,6 +3081,8 @@ Newsletter Section Styles
   color: #dc3545 !important;
 }
 
+
+
 /* Responsive adjustments for newsletter section */
 @media screen and (max-width: 992px) {
   .newsletter-content h2 {
@@ -3061,6 +3121,16 @@ Newsletter Section Styles
 @media screen and (max-width: 480px) {
   .newsletter-content h2 {
     font-size: 24px;
+  }
+
+  .makes-carousel .owl-nav button{
+        width: 50px;
+    height: 50px;
+
+  }
+
+  .benefits-purchasing{
+    padding-top: 0;
   }
   
   .email-input-wrapper {
@@ -3213,24 +3283,10 @@ Footer Section Styles
 
 @media screen and (max-width: 768px) {
   #footer {
-    padding-top: 40px;
+    padding: 40px 30px;
   }
-  
-  .footer-logo {
-    width: 150px;
-  }
-  
-  .footer-desc {
-    font-size: 13px;
-  }
-  
-  .footer-column h4 {
-    font-size: 16px;
-  }
-  
-  .footer-links a {
-    font-size: 13px;
-  }
+
+
 }
 
 /*----------------------------------------------
@@ -3353,6 +3409,12 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
 
 /* Large devices (tablets landscape, 992px to 1199px) */
 @media screen and (max-width: 1199px) and (min-width: 992px) {
+   .vehicle-types-wrapper{
+      justify-content: space-between;
+ }
+ .footer-logo{
+  width: 180px;
+}
   .container {
     max-width: 960px;
   }
@@ -3421,6 +3483,10 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   .container {
     max-width: 720px;
   }
+
+  .footer-column{
+    justify-content: center;
+  }
   
   /* Hero Section */
   section#hero {
@@ -3450,7 +3516,7 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   
   .search-btn {
     width: 100%;
-    margin-top: 10px;
+    padding: 5px;
   }
   
   /* Vehicle Type Buttons - 2 per row */
@@ -3466,12 +3532,12 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   }
   
   .vehicle-icon img {
-    width: 60px;
-    height: 30px;
+    width: 70px;
+    height: 40px;
   }
   
   .vehicle-label {
-    font-size: 16px;
+    font-size: 20px;
   }
   
   /* Stock Section */
@@ -3495,7 +3561,7 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   
   .process-content {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
   }
   
   /* Benefits Section */
@@ -3581,10 +3647,7 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
     gap: 15px;
     text-align: center;
   }
-  
-  .stockbar h2 {
-    font-size: 28px;
-  }
+
   
   /* Vehicle Cards - Full width */
   .new-arrivals .col-lg-3,
@@ -3597,12 +3660,12 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   
   /* Product Number Header */
   .product-number-header {
-    font-size: 12px;
+    font-size: 17px;
   }
   
   /* Vehicle Specs */
   .vehicle-specs {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 10px;
   }
   
@@ -3613,7 +3676,6 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   /* Process Section */
   .purchase-process .section-title,
   .benefits-purchasing .section-title {
-    font-size: 24px;
     text-align: center;
   }
   
@@ -3622,7 +3684,7 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   }
   
   .process-content {
-    margin-top: -40px;
+    margin-top: -40px !important;
     padding: 20px 15px;
   }
   
@@ -3640,11 +3702,10 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   
   /* About Section */
   .about-us {
-    padding-top: 50px;
+    padding-top: 80px;
   }
   
   .about-content h2 {
-    font-size: 28px;
     text-align: center;
   }
   
@@ -3665,7 +3726,7 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   }
   
   #makes h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
   
   .makes-carousel .owl-nav {
@@ -3684,18 +3745,14 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   
   /* Footer */
   .footer-main {
-    padding: 50px 0;
+    padding: 5px 0;
   }
   
   .footer-column {
     align-items: flex-start;
     margin-bottom: 30px;
   }
-  
-  .footer-about,
-  .footer-social {
-    text-align: center;
-  }
+
   
   .footer-social .social-icons {
     justify-content: center;
@@ -3728,6 +3785,11 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
     width: 50px;
     height: 25px;
   }
+
+  #vehicle-types{
+    padding: 0;
+    padding-top: 50px;
+  }
   
   .vehicle-label {
     font-size: 14px;
@@ -3738,47 +3800,26 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
     font-size: 14px;
   }
   
-  .vehicle-dimensions {
-    font-size: 12px;
-  }
+ 
   
-  .spec-label {
-    font-size: 11px;
-  }
-  
-  .spec-value {
-    font-size: 12px;
-  }
+
   
   .vehicle-price {
     font-size: 16px;
   }
   
-  /* Stock Titles */
-  .stockbar h2 {
-    font-size: 22px;
-  }
   
-  .stockbar h4 {
-    font-size: 14px;
-  }
   
   /* Section Titles */
   .purchase-process .section-title,
   .benefits-purchasing .section-title,
   .about-content h2,
   #makes h2 {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
   
-  /* Process Section */
-  .process-title {
-    font-size: 16px;
-  }
+
   
-  .process-desc {
-    font-size: 13px;
-  }
   
   /* Benefits */
   .benefit-title {
@@ -3799,20 +3840,7 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
     max-height: 60px;
   }
   
-  /* View All Links */
-  .view-all-link,
-  .show-all-link {
-    font-size: 14px;
-  }
-  
-  /* Newsletter */
-  .newsletter-content h2 {
-    font-size: 20px;
-  }
-  
-  .newsletter-content p {
-    font-size: 13px;
-  }
+ 
   
   .email-input-wrapper {
     flex-direction: column;
@@ -3831,18 +3859,8 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
     width: 100%;
   }
   
-  /* Footer */
-  .footer-desc {
-    font-size: 12px;
-  }
   
-  .footer-column h4 {
-    font-size: 16px;
-  }
-  
-  .footer-links a {
-    font-size: 13px;
-  }
+
   
   .footer-bottom .copyright {
     font-size: 12px;
@@ -3875,26 +3893,6 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   }
 }
 
-/* Clearance Carousel Navigation Responsive */
-@media screen and (max-width: 1200px) {
-  .clearance-carousel .owl-nav button.owl-prev {
-    left: -30px;
-  }
-  
-  .clearance-carousel .owl-nav button.owl-next {
-    right: -30px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .clearance-carousel .owl-nav button.owl-prev {
-    left: -20px;
-  }
-  
-  .clearance-carousel .owl-nav button.owl-next {
-    right: -20px;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .clearance-carousel .owl-nav {

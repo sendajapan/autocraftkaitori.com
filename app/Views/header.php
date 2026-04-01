@@ -57,7 +57,7 @@ $uri = $uri->getSegment(1);
 
     <nav class="navbar navbar-expand-lg  navbar-light container-fluid position-relative ">
         <div class="container">
-            <a class="navbar-brand" href="<?=base_url('/')?>"><img style="width:315px;" src="<?=base_url("public/assets/images/Group 3412.png")?>"></a>
+            <a class="navbar-brand" href="<?=base_url('/')?>"><img  src="<?=base_url("public/assets/images/Group 3412.png")?>"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -74,20 +74,20 @@ $uri = $uri->getSegment(1);
                     
                     <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="<?= ($uri=='') ? 'active':''; ?> nav-link px-4" aria-current="page" href="<?=base_url()?>">Home</a>
+                            <a class="<?= ($uri=='') ? 'active':''; ?> nav-link px-3" aria-current="page" href="<?=base_url()?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="<?= ($uri=='stock') ? 'active':''; ?> nav-link px-4" href="<?=base_url('stock')?>">New Arrives</a>
+                            <a class="<?= ($uri=='stock') ? 'active':''; ?> nav-link px-3" href="<?=base_url('stock')?>">New Arrives</a>
                         </li>
                         <li class="nav-item">
-                            <a class="<?= ($uri=='about') ? 'active':''; ?> nav-link px-4" href="<?=base_url('about')?>">About Us</a>
+                            <a class="<?= ($uri=='about') ? 'active':''; ?> nav-link px-3" href="<?=base_url('about')?>">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="<?= ($uri=='testimonials') ? 'active':''; ?> nav-link px-4" href="<?=base_url('testimonials')?>">Purchase Process</a>
+                            <a class="<?= ($uri=='testimonials') ? 'active':''; ?> nav-link px-3" href="<?=base_url('testimonials')?>">Purchase Process</a>
                         </li>   
                    
                         <li class="nav-item">
-                            <a class="<?= ($uri=='contact') ? 'active':''; ?> nav-link px-4" href="<?=base_url('contact')?>">Contact Us </a>
+                            <a class="<?= ($uri=='contact') ? 'active':''; ?> nav-link px-3" href="<?=base_url('contact')?>">Contact Us </a>
                         </li>
                     </ul>
 

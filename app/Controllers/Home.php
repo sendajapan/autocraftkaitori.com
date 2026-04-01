@@ -60,7 +60,7 @@ class Home extends BaseController
         $data['request'] = $this->request;
         
 
-        $data['page_title'] = 'Autocraft Korea | Trusted Vehicle Importer/Exporter in Korea';
+        $data['page_title'] = 'Autocraft kaitori | Trusted Vehicle Importer/Exporter in kaitori';
         $data['meta'] = home_meta();
 
         return view('home', $data);

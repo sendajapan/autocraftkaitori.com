@@ -71,7 +71,7 @@ class Contact extends BaseController
                 
                 if ($this->ContactModel->insert($data)) {
 
-                    $email_obj->setFrom('info@autocraftkorea.com', 'AUTOCRAFT KOREA');
+                    $email_obj->setFrom('info@autocraftkorea.com', 'AUTOCRAFT KAITORI');
                     /*$email_obj->setTo('mnoman55@gmail.com');        
                     $email_obj->setTo('iftikhar@sendajapan.com');            
                     $email_obj->setBCC('rztech139@gmail.com');*/      
@@ -79,7 +79,7 @@ class Contact extends BaseController
                     $email_obj->setTo('info@autocraftkorea.com');        
 
                             
-                    $email_obj->setSubject('Autocraft Korea - Contact Message from '.$name);
+                    $email_obj->setSubject('Autocraft Kaitori - Contact Message from '.$name);
 
                     $mailContent = '<table width="800px" style="font-family:calibri;">
                       <tr height="50">

@@ -349,22 +349,22 @@ class Stock extends BaseController
 
 
         if(isset($search['make']) AND !isset($search['model'])){
-            $data['h1'] = ucwords(strtolower($search['make'])).' Cars For Sale In Korea With Price';
+            $data['h1'] = ucwords(strtolower($search['make'])).' Cars For Sale In kaitori With Price';
             $meta = stock_meta_make($search['make']);
         }
         elseif(isset($search['make']) AND isset($search['model'])){
-            $data['h1'] = ucwords(strtolower($search['make'])).' '.ucwords(strtolower($search['model'])).' Cars For Sale In Korea';
+            $data['h1'] = ucwords(strtolower($search['make'])).' '.ucwords(strtolower($search['model'])).' Cars For Sale In kaitori';
             $meta = stock_meta_make_model($search['make'], $search['model']);
         }
         elseif(isset($search['veh_condition'])){
-            $data['h1'] = 'Buy '.$search['veh_condition'].' Cars For Sale In Korea';
+            $data['h1'] = 'Buy '.$search['veh_condition'].' Cars For Sale In kaitori';
             $meta = stock_meta_condition($search['veh_condition']);
         }
         elseif(isset($search['drive'])){
             $meta = stock_meta_drive($search['drive']);
         }
         else{
-           $data['h1'] = 'Used Cars For Sale In Korea With Price';
+           $data['h1'] = 'Used Cars For Sale In kaitori With Price';
            $meta = stock_meta_default();
         }
 
@@ -553,12 +553,12 @@ class Stock extends BaseController
                      {
 
 
-                        $email_obj->setFrom('info@autocraftkorea.com', 'AUTOCRAFT KOREA');   
+                        $email_obj->setFrom('info@autocraftkorea.com', 'AUTOCRAFT KAITORI');   
                         //$email_obj->setTo('mnoman55@gmail.com');        
                         $email_obj->setTo('info@autocraftkorea.com');        
                         // $email_obj->setBCC('info@autocraftkorea.com');            
                         
-                        $email_obj->setSubject('Autocraft Korea - Car Inquiry from '.$name);
+                        $email_obj->setSubject('Autocraft kaitori - Car Inquiry from '.$name);
                         $test = '<table width="800px" style="font-family:calibri;">
                           <tr height="50">
                             <td colspan="2"><h2>INQUIRY</h2></td>

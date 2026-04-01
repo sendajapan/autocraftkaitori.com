@@ -4,16 +4,16 @@
 <?= $this->section('content') ?>
 
 <?php session()->remove('filter'); ?>
-<!-- hero section start  -->
 
+<!-------------------------------------- hero section start  ----------------------->
 <section id="hero" class="position-relative overflow-hidden">
     <div class="container hero-content">
         <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12">
                 <div class="detail mb-4">
-<h1>Your Gateway to Global Truck Exports</h1>
-<p>Reliable trucks, transparent pricing and smooth overseas delivery handled end to end.</p>
-<button class="btn btn-primary">GET A FREE QUOTE</button>
+    <h1>Your Gateway to Global Truck Exports</h1>
+    <p>Reliable trucks, transparent pricing and smooth overseas delivery handled end to end.</p>
+    <button class="btn btn-primary">GET A FREE QUOTE</button>
                 </div>
             </div>
 
@@ -30,17 +30,16 @@
 
     </div>
 </section>
-<!-- hero section ends  -->
+<!-------------------------------------- hero section ends  ------------------------->
 
 
-
-<!-- Form section start  -->
+<!------------------------------------- Form section start  -------------------------->
 <section id="search">
 
 
     <div class="container search-block">
 
-        <h2 class=" mb-2">Search <span class="text-primary"> Trucks </span></h2>
+        <h2 class=" mb-2 text-center text-md-start">Search <span class="text-primary"> Trucks </span></h2>
 
 
         <form action="<?=base_url('stock')?>" method="post" class="row form-group flex-wrap px-3" id="form2">
@@ -195,7 +194,7 @@
 
 
 
-            <div class="col-12 col-md-12 col-lg-2 mt-lg-0 ">
+            <div class="col-12 col-md-6 col-lg-2 mt-lg-0 ">
                 <div class="d-grid" style="margin-top:11px">
                     <input type="submit" name="submit" value="Search Truck" class="btn btn-secondary search-btn">
                 </div>
@@ -207,10 +206,10 @@
     </div>
 
 </section>
-<!-- form section ends  -->
+<!------------------------------------- form section ends  ---------------------------->
 
 
-<!-- Vehicles Type section start -->
+<!------------------------------------ Vehicles Type section start---------------------->
 <section id="vehicle-types">
     <div class="container">
         <div class="vehicle-types-header d-flex justify-content-between align-items-center mb-4">
@@ -251,12 +250,11 @@
         </div>
     </div>
 </section>
-<!-- Vehicles Type section ends -->
+<!------------------------------------ Vehicles Type section ends ----------------------->
 
 
-<!--------------------------------------- stock section start ------------------------------ -->
-
-<section id="search" style="margin-bottom: 50px;">
+<!--------------------------------------- stock section start ---------------------------->
+<section id="stock" >
 
     <div class="container mt-5">
         <div class="row mt-1">
@@ -288,8 +286,8 @@
                                     </a>
                                     <!-- Vehicle Info -->
                                     <div class="vehicle-card-content">
-                                        <h4 class="vehicle-title m-0 px-1"><?= $item['make'] ?> <?= $item['model'] ?> <?= $item['year'] ?? '' ?> <?= $item['exterior_color'] ?? '' ?></h4>
-                                        <p class="vehicle-dimensions">Length 625 x Width 225 x Height 333</p>
+                                        <h4 class="vehicle-title m-0 px-0 px-sm-1"><?= $item['make'] ?> <?= $item['model'] ?> <?= $item['year'] ?? '' ?> <?= $item['exterior_color'] ?? '' ?></h4>
+                                        <p class="vehicle-dimensions text-start text-md-center">Length 625 x Width 225 x Height 333</p>
                                         
                                         <!-- Specs Row -->
                                         <div class="vehicle-specs">
@@ -347,8 +345,8 @@
                                     </a>
                                     <!-- Vehicle Info -->
                                     <div class="vehicle-card-content">
-                                        <h4 class="vehicle-title"><?= $item['make'] ?> <?= $item['model'] ?> <?= $item['body_type'] ?? '' ?> <?= $item['chassis_no'] ?? '' ?></h4>
-                                        <p class="vehicle-dimensions">Length 625 x Width 225 x Height 333</p>
+                                        <h4 class="vehicle-title"><?= $item['make'] ?> <?= $item['model'] ?> <?= $item['year'] ?? '' ?> <?= $item['exterior_color'] ?? '' ?></h4>
+                                        <p class="vehicle-dimensions text-start text-md-center">Length 625 x Width 225 x Height 333</p>
                                         
                                         <!-- Specs Row -->
                                         <div class="vehicle-specs">
@@ -357,7 +355,7 @@
                                                 <span class="spec-value"><?= ($item['mileage']) ? number_format($item['mileage']).' KM' : '-'; ?></span>
                                             </div>
                                             <div class="spec-item">
-                                                <span class="spec-label">CC</span>
+                                                <span class="spec-label">Horsepower</span>
                                                 <span class="spec-value"><?= $item['cc'] ?? '-' ?></span>
                                             </div>
                                             <div class="spec-item">
@@ -385,17 +383,15 @@
 
 
 </section>
-
-<!--------------------------------------- stock section ends ------------------------------ -->
-
+<!--------------------------------------- stock section ends --------------------------->
 
 
-<!------------------------------------- brands section start  -------------------->
+<!------------------------------------- brands section start  ------------------------->
 <section id="makes" class="">
     <div class="container">
-        <div class="d-flex justify-content-between align-items-center mb-5 w-80">
-            <h2 class="ms-5 text-white">Browse Trucks by Make</h2>
-            <a href="<?=base_url('stock')?>" class="show-all-link text-white me-5">Show All Models <i class="fas fa-arrow-right"></i></a>
+        <div class="makes-h d-flex justify-content-between align-items-center w-80">
+            <h2 class="ms-0 ms-md-5 text-white">Browse Trucks by Make</h2>
+            <a href="<?=base_url('stock')?>" class="show-all-link text-white me-0 me-md-5 ">Show All Models <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="d-flex justify-content-center">
             <div class="makes-carousel owl-carousel">
@@ -446,34 +442,30 @@
 
     </div>
 </section>
-<!------------------------------------- brands section ends  -------------------->
+<!------------------------------------- brands section ends  --------------------------->
 
 
-
-
-<!------------------------------------- about us starts  -------------------->
+<!---------------------------------------- about us starts  -------------------------->
 <section class="about-us">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-5 col-sm-12 about-content">
+            <div class="col-lg-5 col-md-12 col-sm-12 about-content">
                 <h2>About Us</h2>
                 <h4>trusted exporter of high quality commercial trucks to overseas markets around the world</h4>
                 <p>Our operations are rooted in transparency, quality control, and customer satisfaction. Every vehicle we offer is carefully selected, inspected and prepared for export to ensure it meets both Japanese standards and the specific requirements of our global clients. From heavy duty trucks and mixers to specialized commercial vehicles, we provide solutions that support businesses across construction, logistics and transportation industries.</p>
                 <p>We work closely with buyers, dealers and business partners across multiple countries, offering clear communication, honest pricing, and dependable after-sales support.</p>
                 <a href="<?=base_url('about')?>" class="btn read-more-btn">Read More</a>
             </div>
-            <div class="col-md-7 col-sm-12 about-image text-end">
+            <div class="col-lg-7 col-md-12 col-sm-12 about-image text-end">
                 <img src="<?=base_url('public/assets/images/about-img.png')?>" alt="About Us - Commercial Truck" class="img-fluid">
             </div>
         </div>
     </div>
 </section>
-<!------------------------------------- about us ends  -------------------->
+<!---------------------------------------- about us ends  ----------------------------->
 
 
-
-
-<!------------------------------------- purchase process start  -------------------->
+<!------------------------------------- purchase process start  ----------------------->
 <section class="purchase-process">
     <div class="container">
         <h2 class="section-title">Purchase Process</h2>
@@ -559,11 +551,10 @@
         </div>
     </div>
 </section>
-<!------------------------------------- purchase process ends  -------------------->
+<!------------------------------------- purchase process ends  ------------------------>
 
 
-
-
+<!------------------------------------- benefits of purchasing start  -------------------->
 <section class="benefits-purchasing">
     <div class="container">
         <h2 class="section-title">Benefits of Purchasing</h2>
@@ -610,9 +601,7 @@
 <!------------------------------------- benefits of purchasing ends  -------------------->
 
 
-
-
-<!------------------------------------- newsletter section start  -------------------->
+<!------------------------------------- newsletter section start  ---------------------->
 <section class="newsletter-section">
     <div class="container">
         <div class="newsletter-wrapper">
@@ -639,7 +628,7 @@
         </div>
     </div>
 </section>
-<!------------------------------------- newsletter section ends  -------------------->
+<!------------------------------------- newsletter section ends  ----------------------->
 
 
 
@@ -1003,7 +992,7 @@ document.querySelectorAll('.accordion-title').forEach(item => {
 });
 
 $('.clearance-carousel').owlCarousel({
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
     loop: true,
     freeMode: true,
@@ -1015,20 +1004,23 @@ $('.clearance-carousel').owlCarousel({
         0: {
             items: 1
         },
-        480: {
+        680: {
+            items: 1
+        },
+        780: {
             items: 2
         },
-        768: {
+        992: {
             items: 3
         },
-        992: {
-            items: 4
+        1299: {
+            items: 3
         }
     }
 });
 
 $('.makes-carousel').owlCarousel({
-    slidesPerView: 3,
+    slidesPerView: 5,
     spaceBetween: 2,
     loop: true,
     freeMode: true,
@@ -1041,12 +1033,15 @@ $('.makes-carousel').owlCarousel({
             items: 2
         },
         480: {
-            items: 3
+            items: 2
         },
         768: {
-            items: 4
+            items: 3
         },
         992: {
+            items: 4
+        },
+         1499: {
             items: 5
         }
     }
