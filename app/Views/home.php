@@ -11,7 +11,9 @@
         <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12">
                 <div class="detail mb-4">
-
+<h1>Your Gateway to Global Truck Exports</h1>
+<p>Reliable trucks, transparent pricing and smooth overseas delivery handled end to end.</p>
+<button class="btn btn-primary">GET A FREE QUOTE</button>
                 </div>
             </div>
 
@@ -38,15 +40,15 @@
 
     <div class="container search-block">
 
-        <h2 class="text-center mb-4">SEARCH <span class="text-primary"> VEHICLE </span></h2>
+        <h2 class=" mb-2">Search <span class="text-primary"> Trucks </span></h2>
 
 
         <form action="<?=base_url('stock')?>" method="post" class="row form-group flex-wrap px-3" id="form2">
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            <div class="col-12 col-md-6 col-lg-2 mt-lg-0 px-3">
+                <label for="vehicle-make2">Manufacturer</label>
                 <div class="input-group ">
-
                     <select name="make" id="vehicle-make2" class="form-select form-control">
-                        <option selected value=""> Make</option>
+                        <option selected value=""> Please Select</option>
                         <?php if($makes){
                                         foreach($makes as $item){ ?>
                         <option value="<?=$item?>"><?=$item?></option>
@@ -56,15 +58,16 @@
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            <div class="col-12 col-md-6 col-lg-2 mt-lg-0 px-3">
+                <label for="v_model2">Model</label>
                 <div class="input-group ">
                     <select name="model" id="v_model2" class="form-select form-control">
-                        <option value="">Model</option>
+                        <option value="">Please Select</option>
                     </select>
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            <!-- <div class="col-12 col-md-6 col-lg-4 mt-lg-0">
 
                 <div class="input-group ">
                     <select id="veh_condition" name="veh_condition" class="form-select form-control" id="vehicle">
@@ -76,12 +79,12 @@
                     </select>
 
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
-
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-2 mt-lg-0 px-3">
+       <label for="body_type">Body Type</label>
                 <div class="input-group ">
                     <select id="body_type" name="body_type" class="form-select form-control">
-                        <option value="">Body Type</option>
+                        <option value="">Please Select</option>
                         <?php if($body_types){
                                         foreach($body_types as $item){ ?>
                         <option value="<?=$item?>"><?=$item?></option>
@@ -90,11 +93,11 @@
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
-
+            <div class="col-12 col-md-6 col-lg-2 mt-lg-0 px-3">
+            <label for="transmission">Transmission</label>
                 <div class="input-group ">
                     <select id="transmission" name="transmission" class="form-select form-control">
-                        <option value="">Transmission</option>
+                        <option value="">Please Select</option>
                         <?php if($transmissions){
                                         foreach($transmissions as $item){ ?>
                         <option value="<?=$item?>"><?=$item?></option>
@@ -103,11 +106,11 @@
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
-
+            <div class="col-12 col-md-6 col-lg-2 mt-lg-0 px-3">
+          <label for="exterior_color">Color</label>
                 <div class="input-group ">
                     <select id="exterior_color" name="exterior_color" class="form-select form-control">
-                        <option value=""> color</option>
+                        <option value=""> Please Select</option>
                         <?php if($colors){
                                         foreach($colors as $item){ ?>
                         <option value="<?=$item?>"><?=$item?></option>
@@ -116,7 +119,7 @@
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            <!-- <div class="col-12 col-md-6 col-lg-4 mt-lg-0">
                 <div class="input-group ">
                     <select id="fuel" name="fuel" class="form-select form-control">
                         <option value=""> Fuel</option>
@@ -127,10 +130,10 @@
                     </select>
 
                 </div>
-            </div>
+            </div> -->
 
-
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+        <!-- 
+            <div class="col-12 col-md-6 col-lg-4 mt-lg-0">
 
                 <div class="input-group">
 
@@ -143,7 +146,7 @@
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            <div class="col-12 col-md-6 col-lg-4 mt-lg-0">
 
                 <div class="input-group">
 
@@ -155,9 +158,9 @@
                     </select>
 
                 </div>
-            </div>
+            </div> -->
 
-            <!-- <div class="ps-3 col-12 col-md-6 col-lg-4 mt-4 mt-lg-0 mb-2 home-range-slider">
+            <!-- <div class="ps-3 col-12 col-md-6 col-lg-4 mt-4 mt-lg-0 home-range-slider">
                 <div class="hero__tab__form">
                     <div class="car-price">
                         <p>CC</p>
@@ -173,7 +176,7 @@
                     </div>
                 </div>
             </div> -->
-            <!-- <div class="ps-3 col-12 col-md-6 col-lg-4 mt-4 mt-lg-0 mb-2 home-range-slider">
+            <!-- <div class="ps-3 col-12 col-md-6 col-lg-4 mt-4 mt-lg-0 home-range-slider">
                 <div class="hero__tab__form">
                     <div class="car-price">
                         <p>Mileage</p>
@@ -192,9 +195,9 @@
 
 
 
-            <div class="col-12 col-md-12 col-lg-12 mt-lg-0 mb-2">
-                <div class="d-grid" style="margin-top:33px">
-                    <input type="submit" name="submit" value="Search Car" class="btn btn-secondary">
+            <div class="col-12 col-md-12 col-lg-2 mt-lg-0 ">
+                <div class="d-grid" style="margin-top:11px">
+                    <input type="submit" name="submit" value="Search Truck" class="btn btn-secondary search-btn">
                 </div>
             </div>
 
@@ -207,9 +210,51 @@
 <!-- form section ends  -->
 
 
+<!-- Vehicles Type section start -->
+<section id="vehicle-types">
+    <div class="container">
+        <div class="vehicle-types-header d-flex justify-content-between align-items-center mb-4">
+            <h3 class="m-0 vehicle-types-title">VEHICLES TYPE</h3>
+            <a href="<?=base_url('stock')?>" class="type-show-all-link">Show All <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="vehicle-types-wrapper">
+            <a href="<?=base_url('stock?body_type=Wing')?>" class="vehicle-type-btn">
+                <span class="vehicle-icon">
+                    <img src="<?=base_url('public/assets/images/image 686.png')?>" alt="Wing">
+                </span>
+                <span class="vehicle-label">WING</span>
+            </a>
+            <a href="<?=base_url('stock?body_type=Dump')?>" class="vehicle-type-btn">
+                <span class="vehicle-icon">
+                    <img src="<?=base_url('public/assets/images/image 687.png')?>" alt="Dump">
+                </span>
+                <span class="vehicle-label">DUMP</span>
+            </a>
+            <a href="<?=base_url('stock?body_type=Flatbed')?>" class="vehicle-type-btn">
+                <span class="vehicle-icon">
+                    <img src="<?=base_url('public/assets/images/image 687.png')?>" alt="Flatbed">
+                </span>
+                <span class="vehicle-label">FLATBED</span>
+            </a>
+            <a href="<?=base_url('stock?body_type=Mixer')?>" class="vehicle-type-btn">
+                <span class="vehicle-icon">
+                    <img src="<?=base_url('public/assets/images/image 689.png')?>" alt="Mixer">
+                </span>
+                <span class="vehicle-label">MIXER</span>
+            </a>
+            <a href="<?=base_url('stock?body_type=Reg+Truck')?>" class="vehicle-type-btn">
+                <span class="vehicle-icon">
+                    <img src="<?=base_url('public/assets/images/image 690.png')?>" alt="Reg Truck">
+                </span>
+                <span class="vehicle-label">REG TRUCK</span>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Vehicles Type section ends -->
+
 
 <!--------------------------------------- stock section start ------------------------------ -->
-
 
 <section id="search" style="margin-bottom: 50px;">
 
@@ -218,139 +263,120 @@
 
             <div class="col-lg-12 col-md-12 stockbar">
                 <div class="container new-arrivals mb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-5">
+                        <h2 class="m-0">New Arrivals</h2>
+                        <a href="<?=base_url('stock')?>" class="view-all-link">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
                     <div class="row">
-                        <h2 class="mb-4">NEW ARRIVALS</h2>
                         <?php if($new_arrivals){foreach($new_arrivals as $item){ ?>
                         <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="card rounded-3">
-                                <div class="card-body p-0 ">
+                            <div class="card vehicle-card rounded-3">
+                                <div class="card-body p-0">
+                                    <!-- Product Number Header -->
+                                    <div class="product-number-header">
+                                        Product Number: <b> <?= $item['veh_id'] ?></b>
+                                    </div>
+                                    <!-- Image -->
                                     <a class="figure" target="_blank" href="<?= base_url('car/'.$item['slug']) ?>">
                                         <?php if($item['featured_image']){ ?>
-                                        <img src="<?=$item['featured_image']?>" class="card-img-top rounded-3"
-                                            alt="...">
+                                        <img src="<?=$item['featured_image']?>" class="card-img-top vehicle-card-img"
+                                            alt="<?= $item['make'] ?> <?= $item['model'] ?>">
                                         <?php }else{ ?>
-                                        <img src="<?=base_url("public/assets/images/test.webp")?>" class="card-img-top"
+                                        <img src="<?=base_url("public/assets/images/test.webp")?>" class="card-img-top vehicle-card-img"
                                             alt="...">
                                         <?php } ?>
-                                        <!-- <div class="year-tag"><?= $item['year'] ?></div> -->
                                     </a>
-                                    <div class="row px-4">
-                                        <div class="col-9 p-0">
-                                            <a>
-                                                <h4 class="card-title" target="_blank"
-                                                    href="<?= base_url('car/'.$item['slug']) ?>">
-                                                    <?= $item['make'] ?> <?= $item['model'] ?></h4>
-                                            </a>
-                                        </div>
-                                        <div class="col-3 p-0">
-                                            <a href="" class="text-black">ASK</a>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="row card-text">
-                                        <div
-                                            class="col-6 px-1 col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-12 col-sm-5 offset-sm-1 col-xs-5 offset-xs-1 d-flex flex-column align-items-baseline detail_box">
-                                            <div class="text-nowrap"><i class="fa-solid fa-gauge"></i>
-                                                <span><?= ($item['mileage']) ? number_format($item['mileage']).' km' : '-'; ?></span>
+                                    <!-- Vehicle Info -->
+                                    <div class="vehicle-card-content">
+                                        <h4 class="vehicle-title m-0 px-1"><?= $item['make'] ?> <?= $item['model'] ?> <?= $item['year'] ?? '' ?> <?= $item['exterior_color'] ?? '' ?></h4>
+                                        <p class="vehicle-dimensions">Length 625 x Width 225 x Height 333</p>
+                                        
+                                        <!-- Specs Row -->
+                                        <div class="vehicle-specs">
+                                            <div class="spec-item">
+                                                <span class="spec-label">Mileage</span>
+                                                <span class="spec-value"><?= ($item['mileage']) ? number_format($item['mileage']).' KM' : '-'; ?></span>
                                             </div>
-                                            <div class="text-nowrap"><i class="fa-solid fa-palette"></i>
-                                                <span><?=$item['exterior_color']?></span>
+                                            <div class="spec-item">
+                                                <span class="spec-label">Horsepower</span>
+                                                <span class="spec-value"><?= $item['cc'] ?? '-' ?></span>
                                             </div>
-                                            <div class="text-nowrap"><i class="fa-solid fa-gas-pump"></i>
-                                                <span><?=$item['fuel']?> </span>
+                                            <div class="spec-item">
+                                                <span class="spec-label">Transmission</span>
+                                                <span class="spec-value"><?= $item['transmission'] ?? 'F6' ?></span>
                                             </div>
                                         </div>
-                                        <div
-                                            class="col-6 px-1 col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-12 col-sm-5 offset-sm-1 col-xs-5 offset-xs-1 d-flex flex-column align-items-baseline detail_box">
-                                            <div class="text-nowrap"><i class="fa-solid fa-calendar"></i>
-                                                <span><?=$item['year']?></span>
-                                            </div>
-                                            <div class="text-nowrap"><i class="fa-solid fa-dharmachakra"></i>
-                                                <span><?=$item['drive']?></span>
-                                            </div>
-                                            <div class="text-nowrap"><i class="fa-solid fa-gears"></i>
-                                                <span><?=$item['transmission']?></span>
-                                            </div>
+                                        
+                                        <!-- Price and View Details -->
+                                        <div class="vehicle-footer">
+                                            <div class="vehicle-price">¥<?= isset($item['price']) ? number_format($item['price']) : 'ASK' ?></div>
+                                            <a href="<?= base_url('car/'.$item['slug']) ?>" class="view-details-link">View Details <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                         <?php } } ?>
-                        <div class="text-end">
-                            <a href="<?=base_url("stock")?>" class="btn btn-secondary">View All</a>
-                        </div>
                     </div>
 
                 </div>
 
                 <div class="container clearance">
-                    <div class="row">
-                        <h2 class="mb-4">CLEARANCE</h2>
-                        <?php if($new_arrivals){foreach($new_arrivals as $key => $item){ if($key<4){?>
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <div class="card rounded-3">
-                                <div class="card-body p-0 ">
+                    <div class="d-flex justify-content-between align-items-center mb-5">
+                        <h2 class="m-0">Clearance</h2>
+                        <a href="<?=base_url('stock')?>" class="view-all-link">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="clearance-carousel owl-carousel">
+                        <?php if($new_arrivals){foreach($new_arrivals as $key => $item){ if($key<8){?>
+                        <div class="item">
+                            <div class="card vehicle-card rounded-3">
+                                <div class="card-body p-0">
+                                    <!-- Product Number Header -->
+                                    <div class="product-number-header">
+                                        Product Number: <?= $item['veh_id'] ?>
+                                    </div>
+                                    <!-- Image -->
                                     <a class="figure" target="_blank" href="<?= base_url('car/'.$item['slug']) ?>">
                                         <?php if($item['featured_image']){ ?>
-                                        <img src="<?=$item['featured_image']?>" class="card-img-top rounded-3"
-                                            alt="...">
+                                        <img src="<?=$item['featured_image']?>" class="card-img-top vehicle-card-img"
+                                            alt="<?= $item['make'] ?> <?= $item['model'] ?>">
                                         <?php }else{ ?>
-                                        <img src="<?=base_url("public/assets/images/test.webp")?>" class="card-img-top"
+                                        <img src="<?=base_url("public/assets/images/test.webp")?>" class="card-img-top vehicle-card-img"
                                             alt="...">
                                         <?php } ?>
                                     </a>
-                                    <div class="row px-4">
-                                        <div class="col-9 p-0">
-                                            <a>
-                                                <h4 class="card-title" target="_blank"
-                                                    href="<?= base_url('car/'.$item['slug']) ?>">
-                                                    <?= $item['make'] ?> <?= $item['model'] ?></h4>
-                                            </a>
-                                        </div>
-                                        <div class="col-3 p-0">
-                                            <a href="" class="text-black">ASK</a>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="row card-text">
-                                        <div
-                                            class="col-6 px-1 col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-12 col-sm-5 offset-sm-1 col-xs-5 offset-xs-1 d-flex flex-column align-items-baseline detail_box">
-                                            <div class="text-nowrap"><i class="fa-solid fa-gauge"></i>
-                                                <span><?= ($item['mileage']) ? number_format($item['mileage']).' km' : '-'; ?></span>
+                                    <!-- Vehicle Info -->
+                                    <div class="vehicle-card-content">
+                                        <h4 class="vehicle-title"><?= $item['make'] ?> <?= $item['model'] ?> <?= $item['body_type'] ?? '' ?> <?= $item['chassis_no'] ?? '' ?></h4>
+                                        <p class="vehicle-dimensions">Length 625 x Width 225 x Height 333</p>
+                                        
+                                        <!-- Specs Row -->
+                                        <div class="vehicle-specs">
+                                            <div class="spec-item">
+                                                <span class="spec-label">Mileage</span>
+                                                <span class="spec-value"><?= ($item['mileage']) ? number_format($item['mileage']).' KM' : '-'; ?></span>
                                             </div>
-                                            <div class="text-nowrap"><i class="fa-solid fa-palette"></i>
-                                                <span><?=$item['exterior_color']?></span>
+                                            <div class="spec-item">
+                                                <span class="spec-label">CC</span>
+                                                <span class="spec-value"><?= $item['cc'] ?? '-' ?></span>
                                             </div>
-                                            <div class="text-nowrap"><i class="fa-solid fa-gas-pump"></i>
-                                                <span><?=$item['fuel']?> </span>
+                                            <div class="spec-item">
+                                                <span class="spec-label">Transmission</span>
+                                                <span class="spec-value"><?= $item['transmission'] ?? 'F6' ?></span>
                                             </div>
                                         </div>
-                                        <div
-                                            class="col-6 px-1 col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-12 col-sm-5 offset-sm-1 col-xs-5 offset-xs-1 d-flex flex-column align-items-baseline detail_box">
-                                            <div class="text-nowrap"><i class="fa-solid fa-calendar"></i>
-                                                <span><?=$item['year']?></span>
-                                            </div>
-                                            <div class="text-nowrap"><i class="fa-solid fa-dharmachakra"></i>
-                                                <span><?=$item['drive']?></span>
-                                            </div>
-                                            <div class="text-nowrap"><i class="fa-solid fa-gears"></i>
-                                                <span><?=$item['transmission']?></span>
-                                            </div>
+                                        
+                                        <!-- Price and View Details -->
+                                        <div class="vehicle-footer">
+                                            <div class="vehicle-price">¥<?= isset($item['price']) ? number_format($item['price']) : 'ASK' ?></div>
+                                            <a href="<?= base_url('car/'.$item['slug']) ?>" class="view-details-link">View Details <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <?php } } } ?>
-                        <div class="text-end">
-                            <a href="<?=base_url("stock")?>" class="btn btn-secondary">View All</a>
-                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -364,350 +390,258 @@
 
 
 
-<!------------------------------------- our services start  -------------------->
-
-<section class="our-services ">
-    <div class="container mb-5">
-        <div class="row px-1">
-
-            <h2 class="mb-4">OUR SERVICES</h2>
-            <div class="testimonial__slider owl-carousel">
-                <div class="testimonial__item">
-                    <div class="testimonial__item__author">
-                        <div class="service-card d-flex align-items-center flex-column">
-                            <img class="services-card__image" src="<?=base_url("public/assets/images/sales.jpg")?>"
-                                alt="">
-                            <h3>1. New and Used Car Sales</h3>
-                            <p>We strive to make car shopping convenient. Explore our range, compare features, and
-                                choose confidently.</p>
-                            <a href="<?=base_url("about")?>">View details <i
-                                    class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial__item">
-                    <div class="testimonial__item__author">
-                        <div class="service-card d-flex align-items-center flex-column">
-                            <img class="services-card__image" src="<?=base_url("public/assets/images/finance.jpg")?>"
-                                alt="">
-                            <h3>2. Car Financing and Loans</h3>
-                            <p>Offering flexible financing solutions to make car ownership simple and affordable.
-                            </p>
-                            <a href="<?=base_url("about")?>">View details <i
-                                    class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial__item">
-                    <div class="testimonial__item__author">
-                        <div class="service-card d-flex align-items-center flex-column">
-                            <img class="services-card__image" src="<?=base_url("public/assets/images/trading.jpg")?>"
-                                alt="">
-                            <h3>3. Car Trade-In and Valuation</h3>
-                            <p>Trading in your car is easy with us. Use our online tool or visit for an in-person
-                                evaluation.
-                            </p>
-                            <a href="<?=base_url("about")?>">View details <i
-                                    class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial__item">
-                    <div class="testimonial__item__author">
-                        <div class="service-card d-flex align-items-center flex-column">
-                            <img class="services-card__image" src="<?=base_url("public/assets/images/autoparts.jpg")?>"
-                                alt="">
-                            <h3>4. Auto Parts and Accessories</h3>
-                            <p>Access a full range of genuine parts and accessories to keep your car in top condition.
-                            </p>
-                            <a href="<?=base_url("about")?>">View details <i
-                                    class="fa-solid fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-</section>
-
-<!------------------------------------- our services ends  -------------------->
-
-<!------------------------------------- facts section start  -------------------->
-<section class="facts mb-5">
-    <div class="container pb-5">
-        <div class="row">
-            <div class="col-lg-4 col-sm-12">
-                <div class="fact-card">
-                    <i class="fa-solid fa-handshake text-center"></i>
-                    <h2 class="text-center">5+ years</h2>
-                    <p class="text-center">IN EXPORT CAR BUSINESS</p>
-                </div>
-
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <div class="fact-card">
-                    <i class="fa-solid fa-truck text-center"></i>
-                    <h2 class="text-center"> 2,000+ vehicles</h2>
-                    <p class="text-center">SOLD IN 2024</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <div class="fact-card">
-                    <i class="fa-solid fa-earth-americas text-center"></i>
-                    <h2 class="text-center">10+ employees</h2>
-                    <p class="text-center"> SPEAK DIFFERENT LANGUAGES</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!------------------------------------- facts section ends  -------------------->
-
-
 <!------------------------------------- brands section start  -------------------->
-<section id="makes">
-    <div class="makes-sub container">
-        <h2 class="text-white pb-4 m-0">BROWSE CARS BY MAKE</h2>
-        <div class="row justify-content-center">
-            <div class="col-6 col-lg-2 col-md-4">
-                <a href="<?=base_url('make/Genesis')?>">
-                    <div class="services-components text-center">
-                        <img src="<?=base_url("public/assets/images/makes/Genesis-Logo-2015.png")?>" alt="makes">
-                        <h5>GENESIS</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-lg-2 col-md-4">
-                <a href="<?=base_url('make/Kia')?>">
-                    <div class="services-components text-center">
-                        <img src="<?=base_url("public/assets/images/makes/kia 1.png")?>" alt="makes">
-                        <h5>KIA</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-lg-2 col-md-4">
-                <a href="<?=base_url('make/Renault')?>">
-                    <div class="services-components center text-center">
-                        <img src="<?=base_url("public/assets/images/makes/Renault.png")?>" alt="makes">
-                        <h5>RENAULT</h5>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-6 col-lg-2 col-md-4">
-                <a href="<?=base_url('make/Hyundai')?>">
-                    <div class="services-components text-center">
-                        <img src="<?=base_url("public/assets/images/makes/hyundai.png")?>" alt="makes">
-                        <h5>hyundai</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-lg-2 col-md-4">
-                <a href="<?=base_url('make/Toyota')?>">
-                    <div class="services-components text-center">
-                        <img src="<?=base_url("public/assets/images/makes/toyota.png")?>" alt="makes">
-                        <h5>TOYOTA</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-lg-2 col-md-4">
-                <a href="<?=base_url('make/Honda')?>">
-                    <div class="services-components text-center">
-                        <img src="<?=base_url("public/assets/images/makes/honda.png")?>" alt="makes">
-                        <h5>Honda</h5>
-                    </div>
-                </a>
-            </div>
-
+<section id="makes" class="">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-5 w-80">
+            <h2 class="ms-5 text-white">Browse Trucks by Make</h2>
+            <a href="<?=base_url('stock')?>" class="show-all-link text-white me-5">Show All Models <i class="fas fa-arrow-right"></i></a>
         </div>
-    </div>
+        <div class="d-flex justify-content-center">
+            <div class="makes-carousel owl-carousel">
+                <div class="item">
+                    <a href="<?=base_url('make/Genesis')?>">
+                        <div class="make-card">
+                            <img src="<?=base_url("public/assets/images/makes/image 692.png")?>" alt="Genesis">
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="<?=base_url('make/Kia')?>">
+                        <div class="make-card">
+                            <img src="<?=base_url("public/assets/images/makes/image 691.png")?>" alt="Kia">
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="<?=base_url('make/Renault')?>">
+                        <div class="make-card">
+                            <img src="<?=base_url("public/assets/images/makes/image 693.png")?>" alt="Renault">
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="<?=base_url('make/Hyundai')?>">
+                        <div class="make-card">
+                            <img src="<?=base_url("public/assets/images/makes/image 694.png")?>" alt="Hyundai">
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="<?=base_url('make/Toyota')?>">
+                        <div class="make-card">
+                            <img src="<?=base_url("public/assets/images/makes/image 696.png")?>" alt="Toyota">
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="<?=base_url('make/Honda')?>">
+                        <div class="make-card">
+                            <img src="<?=base_url("public/assets/images/makes/honda.png")?>" alt="Honda">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
 
+    </div>
 </section>
 <!------------------------------------- brands section ends  -------------------->
 
 
 
 
-
-
-
-<!------------------------------------- video starts  -------------------->
-<section class="video py-5">
+<!------------------------------------- about us starts  -------------------->
+<section class="about-us">
     <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-6 col-sm-12 video-container">
-                <iframe width="100%" height="440" src="https://www.youtube.com/embed/9kubHjOpXg4"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+        <div class="row align-items-center">
+            <div class="col-md-5 col-sm-12 about-content">
+                <h2>About Us</h2>
+                <h4>trusted exporter of high quality commercial trucks to overseas markets around the world</h4>
+                <p>Our operations are rooted in transparency, quality control, and customer satisfaction. Every vehicle we offer is carefully selected, inspected and prepared for export to ensure it meets both Japanese standards and the specific requirements of our global clients. From heavy duty trucks and mixers to specialized commercial vehicles, we provide solutions that support businesses across construction, logistics and transportation industries.</p>
+                <p>We work closely with buyers, dealers and business partners across multiple countries, offering clear communication, honest pricing, and dependable after-sales support.</p>
+                <a href="<?=base_url('about')?>" class="btn read-more-btn">Read More</a>
             </div>
-            <div class="col-md-6 col-sm-12 video-container px-5">
-                <div>
-                    <h3 class="text-dark">Performance and Precision in Every Drive</h3>
-                </div>
-                <p>At Autocraft Korea lnc, we specialize in providing premium quality vehicles that combine cutting-edge
-                    performance with reliable durability. Whether you're looking for an everyday commuter or a
-                    high-performance machine, we've got you covered.</p>
-                <p>
+            <div class="col-md-7 col-sm-12 about-image text-end">
+                <img src="<?=base_url('public/assets/images/about-img.png')?>" alt="About Us - Commercial Truck" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------------------------- about us ends  -------------------->
 
-                    Our commitment to excellence extends beyond just selling cars – we ensure every vehicle is
-                    inspected, tested, and certified to meet your expectations. Explore our diverse range of models,
-                    from eco-friendly options to turbocharged engines built for thrill-seekers.
-                </p>
-                <p>
-                    Feel the power, experience the luxury, and drive with confidence. Autocraft Korea lnc is here to
-                    take your
-                    driving experience to the next level.
-                </p>
-                <div class="mt-5">
-                    <a href="" class="btn stylish-btn">View All</a>
+
+
+
+<!------------------------------------- purchase process start  -------------------->
+<section class="purchase-process">
+    <div class="container">
+        <h2 class="section-title">Purchase Process</h2>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 px-1">
+                <div class="process-card">
+                    <div class="process-image">
+                        <img src="<?=base_url('public/assets/images/Image (9).png')?>" alt="Apply for an appraisal">
+                    </div>
+                    <div class="process-content">
+                        <div class="process-number">01</div>
+                        <h3 class="process-title text-center">Apply for an appraisal</h3>
+                        <p class="process-desc">Please contact your sales representative or the Truck Division. You can contact us by email, phone, or fax, whichever method is most convenient for you.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 px-1">
+                <div class="process-card">
+                    <div class="process-image">
+                        <img src="<?=base_url('public/assets/images/Image (10).png')?>" alt="On-site assessment">
+                    </div>
+                    <div class="process-content">
+                        <div class="process-number">02</div>
+                        <h3 class="process-title text-center">On-site assessment</h3>
+                        <p class="process-desc">A local representative will visit you and assess your vehicle. Of course, it's free, so please feel free to contact us.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 px-1">
+                <div class="process-card">
+                    <div class="process-image">
+                        <img src="<?=base_url('public/assets/images/Image (11).png')?>" alt="Proposal of amount">
+                    </div>
+                    <div class="process-content">
+                        <div class="process-number">03</div>
+                        <h3 class="process-title text-center">Proposal of amount</h3>
+                        <p class="process-desc">A specialized department within Enefree will calculate and present a purchase price based on domestic and international demand.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 px-1">
+                <div class="process-card">
+                    <div class="process-image">
+                        <img src="<?=base_url('public/assets/images/Image (12).png')?>" alt="Contract conclusion">
+                    </div>
+                    <div class="process-content">
+                        <div class="process-number">04</div>
+                        <h3 class="process-title text-center">Contract conclusion</h3>
+                        <p class="process-desc">Once you agree to the proposed amount, we will proceed with the contract. We ensure a smooth and transparent process.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6 px-1">
+                <div class="process-card">
+                    <div class="process-image">
+                        <img src="<?=base_url('public/assets/images/Image (13).png')?>" alt="Vehicle collection">
+                    </div>
+                    <div class="process-content">
+                        <div class="process-number">05</div>
+                        <h3 class="process-title text-center">Vehicle collection</h3>
+                        <p class="process-desc">We will arrange for the collection of your vehicle at a convenient time and location, ensuring a hassle-free experience.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6 px-1">
+                <div class="process-card">
+                    <div class="process-image">
+                        <img src="<?=base_url('public/assets/images/Image (14).png')?>" alt="Payment completion">
+                    </div>
+                    <div class="process-content">
+                        <div class="process-number">06</div>
+                        <h3 class="process-title text-center">Payment completion</h3>
+                        <p class="process-desc">Payment will be completed promptly after vehicle collection. We offer secure and reliable payment methods for your peace of mind.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-<!------------------------------------- video ends  -------------------->
+<!------------------------------------- purchase process ends  -------------------->
 
 
 
 
-<!------------------------------------- resources start  -------------------->
-
-<section class="resources my-5">
-    <div class="container py-4">
-        <div class="row">
-            <h2 class="text-center">RESOURCES</h2>
-            <div class="col-12">
-
-                <div class="accordion">
-                    <!-- Item 1 -->
-                    <div class="accordion-item">
-                        <div class="accordion-title">Top Models</div>
-                        <div class="accordion-content">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <p>
-                                        <a href="<?=base_url('make/Hyundai/model/Santa Fe')?>"> Hyundai Santa Fe</a>
-                                    </p>
-                                    <p>
-                                        <a href="<?=base_url('make/Hyundai/model/Tucson')?>"> Hyundai Tucson</a>
-                                    </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>
-                                        <a href="<?=base_url('make/KIA/model/New Sportage')?>"> KIA Sportage</a>
-                                    </p>
-                                    <p>
-                                        <a href="<?=base_url('make/GMC/model/ACADIA')?>"> GMC ACADIA</a>
-                                    </p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>
-                                        <a href="<?=base_url('make/GMC/model/YUKON')?>"> GMC YUKON</a>
-                                    </p>
-                                    <p>
-                                        <a href="<?=base_url('make/RENAULT/model/MEGANE')?>"> RENAULT MEGANE</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
+<section class="benefits-purchasing">
+    <div class="container">
+        <h2 class="section-title">Benefits of Purchasing</h2>
+        <div class="row g-4">
+            <!-- Card 1 - Collage image -->
+            <div class="col-lg-4 col-md-6 px-2">
+                <div class="benefit-card">
+                    <div class="benefit-image-single">
+                        <img src="<?=base_url('public/assets/images/Rectangle (3).png')?>" alt="Over 3,000 units traded annually">
                     </div>
-
-                    <!-- Item 2 -->
-                    <div class="accordion-item">
-                        <div class="accordion-title">Inventory By Cc</div>
-                        <div class="accordion-content">
-                            <div class="row">
-                                <div class="col-md-6 d-flex justify-content-around">
-                                    <p>
-                                        800cc
-                                    </p>
-                                    <p>
-                                        1000cc
-                                    </p>
-                                    <p>
-                                        1300cc
-                                    </p>
-                                </div>
-                                <div class="col-md-6 d-flex justify-content-around">
-
-                                    <p>
-                                        1600cc
-                                    </p>
-                                    <p>
-                                        1800cc
-                                    </p>
-                                    <p>
-                                        2000cc
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 3 -->
-                    <div class="accordion-item">
-                        <div class="accordion-title">Fuel</div>
-                        <div class="accordion-content">
-                            <div class="row">
-                                <div class="col-md-4 d-flex justify-content-between">
-                                    <p>
-                                        Gasoline
-                                    </p>
-                                    <p>
-                                        Diesel
-                                    </p>
-                                    <p>
-                                        Electric
-                                    </p>
-                                    <p>
-                                        Hyoctane
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 4 -->
-                    <div class="accordion-item">
-                        <div class="accordion-title">How to Buy</div>
-                        <div class="accordion-content">
-                            <p><b>Step-01 Select a vehicle</b><br>We offer a wide selection of over 1,000 vehicles, with
-                                our stock regularly updated. Each
-                                vehicle listing includes detailed descriptions and pictures, with additional photos
-                                available upon request after purchase, prior to scheduled shipment. If you can't find
-                                the vehicle you're looking for in our current stock, please reach out via our inquiry
-                                form or take advantage of our Auction Agent services.</p>
-
-                            <p><b>Step-02 Request for free quotation</b><br>We are happy to respond to an unlimited
-                                number of serious inquiries about any vehicle in our stock. Feel free to ask any
-                                questions you may have regarding the vehicle or the purchase process. Upon request, we
-                                can also provide a detailed invoice with a full estimate within three working days. This
-                                invoice will include the total cost of the vehicle, shipping, and any additional charges
-                                based on the chosen shipping method, along with payment details. Please be aware that
-                                the quoted amount is valid for a limited time due to potential fluctuations in currency
-                                exchange rates and shipping fees.</p>
-
-                            <p><b>Step-03 Complete the payment</b><br>Once you've received your quotation and decide to
-                                move forward with the purchase, we kindly ask that payment be completed within 5 working
-                                days. While we offer various payment methods, we highly recommend using Telegraphic
-                                Transfer (T/T) for a smooth transaction.</p>
-                        </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Over 3,000 units traded annually</h3>
+                        <p class="benefit-desc">Enefree has accumulated experience buying and selling from many customers, so you can rest assured that you can leave it to us.</p>
                     </div>
                 </div>
             </div>
-
+            <!-- Card 2 - Single image -->
+            <div class="col-lg-4 col-md-6 px-2">
+                <div class="benefit-card">
+                    <div class="benefit-image-single">
+                        <img src="<?=base_url('public/assets/images/Rectangle (4).png')?>" alt="Logos and sign removal">
+                    </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Logos and sign must be removed</h3>
+                        <p class="benefit-desc">At auto auctions overseas, you often see vehicles with company names still on them. Enefree will remove and repaint</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 - Single image -->
+            <div class="col-lg-4 col-md-6 px-2">
+                <div class="benefit-card">
+                    <div class="benefit-image-single">
+                        <img src="<?=base_url('public/assets/images/Rectangle (2).png')?>" alt="Accident Trucks">
+                    </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Accident Trucks, flood damaged</h3>
+                        <p class="benefit-desc">If you have any problems with your vehicle, such as an unexpected accident, please feel free to contact Enefree.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+<!------------------------------------- benefits of purchasing ends  -------------------->
 
-<!------------------------------------- resouces ends  -------------------->
+
+
+
+<!------------------------------------- newsletter section start  -------------------->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-wrapper">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="newsletter-content">
+                        <h2>Subscribe to Autocraft Kaitori</h2>
+                        <p>Stay updated with new trucks, exclusive offers, and industry insights from Japan.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="newsletter-form">
+                        <div class="email-input-wrapper">
+                            <input type="email" id="newsletter_email" name="newsletter_email" placeholder="Your email address" class="newsletter-input">
+                            <button type="submit" id="newsletter_submit" class="newsletter-btn">Sign Up</button>
+                        </div>
+                        <div id="newsletter_loader" class="d-none text-center mt-3">
+                            <div class="spinner-border text-light" role="status"></div>
+                        </div>
+                        <h6 id="newsletter_alert" class="d-none alert text-center mt-3 mb-0"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------------------------- newsletter section ends  -------------------->
+
+
 
 
 <?= $this->endSection() ?>
@@ -742,7 +676,9 @@ $(window).on("load", function() {
                             '</option>';
                     }
                     $("#body_type").html(body_type);
-                    $('#body_type').niceSelect('update');
+                    if ($.fn.niceSelect) {
+                        $('#body_type').niceSelect('update');
+                    }
                 }
 
             }
@@ -773,6 +709,9 @@ $(window).on("load", function() {
                     }
                     $("#exterior_color").html(exterior_color);
                     $('#exterior_color').niceSelect('update');
+                    if ($.fn.niceSelect) {
+                        $('#exterior_color').niceSelect('update');
+                    }
                 }
 
             }
@@ -803,6 +742,9 @@ $(window).on("load", function() {
                     }
                     $("#transmission").html(transmission);
                     $('#transmission').niceSelect('update');
+                    if ($.fn.niceSelect) {
+                        $('#transmission').niceSelect('update');
+                    }
                 }
 
             }
@@ -827,6 +769,9 @@ $(window).on("load", function() {
         }
         $("#veh_condition").html(veh_condition);
         $('#veh_condition').niceSelect('update');
+        if ($.fn.niceSelect) {
+            $('#veh_condition').niceSelect('update');
+        }
 
 
     }
@@ -848,6 +793,9 @@ $(window).on("load", function() {
         }
         $("#drive").html(drive);
         $('#drive').niceSelect('update');
+        if ($.fn.niceSelect) {
+            $('#drive').niceSelect('update');
+        }
 
 
     }
@@ -868,6 +816,9 @@ $(window).on("load", function() {
 
         $("#year_from").html(y_f);
         $('#year_from').niceSelect('update');
+        if ($.fn.niceSelect) {
+            $('#year_from').niceSelect('update');
+        }
 
     }
 
@@ -887,6 +838,9 @@ $(window).on("load", function() {
 
         $("#year_to").html(y_e);
         $('#year_to').niceSelect('update');
+        if ($.fn.niceSelect) {
+            $('#year_to').niceSelect('update');
+        }
 
     }
 
@@ -913,6 +867,9 @@ $(window).on("load", function() {
                     }
                     $("#vehicle-make").html(make_select);
                     $('#vehicle-make').niceSelect('update');
+                    if ($.fn.niceSelect) {
+                        $('#vehicle-make').niceSelect('update');
+                    }
                 }
 
             }
@@ -1045,14 +1002,15 @@ document.querySelectorAll('.accordion-title').forEach(item => {
     });
 });
 
-$('.testimonial__slider').owlCarousel({
-    slidesPerView: 3,
-    spaceBetween: 40,
+$('.clearance-carousel').owlCarousel({
+    slidesPerView: 4,
+    spaceBetween: 20,
     loop: true,
     freeMode: true,
-    margin: 40,
+    margin: 20,
     dots: false,
     nav: true,
+    navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
     responsive: {
         0: {
             items: 1
@@ -1060,15 +1018,89 @@ $('.testimonial__slider').owlCarousel({
         480: {
             items: 2
         },
-        760: {
+        768: {
             items: 3
         },
-        1560: {
-            items: 3
-        },
-        1960: {
-            items: 3
+        992: {
+            items: 4
         }
+    }
+});
+
+$('.makes-carousel').owlCarousel({
+    slidesPerView: 3,
+    spaceBetween: 2,
+    loop: true,
+    freeMode: true,
+    margin: 5,
+    dots: false,
+    nav: true,
+    navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+    responsive: {
+        0: {
+            items: 2
+        },
+        480: {
+            items: 3
+        },
+        768: {
+            items: 4
+        },
+        992: {
+            items: 5
+        }
+    }
+});
+
+// Newsletter Subscription
+$(document).on('click', '#newsletter_submit', function(e) {
+    e.preventDefault();
+    var email_id = $('#newsletter_email').val();
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (regex.test(email_id)) {
+
+        $("#newsletter_loader").removeClass("d-none");
+
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LenXaYqAAAAAOpYOl81pk5ADV9DZq2BpNNo-TNr', {
+                action: 'submit'
+            }).then(function(token) {
+
+                $.ajax({
+                    url: "<?=base_url('website/subscribtion')?>",
+                    method: "POST",
+                    data: {
+                        email_id: email_id,
+                        recaptcha_token: token
+                    },
+                    dataType: "json",
+                    success: function(data) {
+                        $("#newsletter_loader").hide();
+                        if (data.success) {
+                            $('#newsletter_alert').removeClass('d-none');
+                            $('#newsletter_alert').removeClass('text-danger');
+                            $('#newsletter_alert').addClass('text-success');
+                            $('#newsletter_alert').text(data.success_message).fadeIn();
+                            $('#newsletter_alert').fadeOut(7000);
+                        } else {
+                            $('#newsletter_alert').removeClass('d-none');
+                            $('#newsletter_alert').removeClass('text-success');
+                            $('#newsletter_alert').addClass('text-danger');
+                            $('#newsletter_alert').text(data.error_message).fadeIn();
+                            $('#newsletter_alert').fadeOut(7000);
+                        }
+                    }
+                });
+            });
+        });
+
+    } else {
+        $('#newsletter_alert').removeClass('d-none');
+        $('#newsletter_alert').removeClass('text-success');
+        $('#newsletter_alert').addClass('text-danger');
+        $('#newsletter_alert').text('Please use correct email address');
+        $('#newsletter_alert').fadeIn();
+        $('#newsletter_alert').fadeOut(7000);
     }
 });
 </script>

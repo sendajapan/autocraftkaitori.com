@@ -144,9 +144,33 @@ class Home extends BaseController
                     }
                 
                 echo json_encode($data);     
-                       
+                    
             }
         }
+
+
+    public function setLanguage()
+    {
+        $language = $this->request->getPost('language');
+        
+        // Supported languages
+        $supported_langs = ['en', 'ja', 'ko'];
+        
+        if (in_array($language, $supported_langs)) {
+            // Set language in session
+            $session = session();
+            $session->set('language', $language);
+            
+            $response = ['success' => true];
+        } else {
+            $response = ['success' => false, 'error' => 'Unsupported language'];
+        }
+        
+        // Force JSON output and exit immediately to prevent debug toolbar
+        header('Content-Type: application/json');
+        echo json_encode($response);
+        exit(0);
+    }
 
 
 }

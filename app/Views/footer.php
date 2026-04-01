@@ -1,142 +1,78 @@
 <!-- Footer Section Starts -->
 <section id="footer">
-
-    <!-- <div class="footer-follow">
-            <footer class="container d-flex justify-content-between align-items-center">
-                    <h4 class="m-0">Follow Us On</h4>
-                    <div>
-                        <a class="me-2"><img src="<?=base_url('public/assets/images/x.png')?>" class="pe-2" alt="image"></a>
-                        <a class="me-2"><img src="<?=base_url('public/assets/images/facebook.png')?>" class="pe-2" alt="image"></a>
-                        <a class="me-2"><img src="<?=base_url('public/assets/images/insta.png')?>" class="pe-2" alt="image"></a>
+    <div class="footer-wrapper">
+        <div class="container">
+            <footer class="footer-main">
+                <div class="row">
+                    <!-- Logo and Description -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 footer-about">
+                        <a href="<?=base_url()?>">
+                            <img src="<?=base_url("public/assets/images/Group 3412.png")?>" alt="Autocraft Kaitori" class="footer-logo">
+                        </a>
+                        <p class="footer-desc">
+                            'At Autocraft Kaitori, We Proudly Help You Choose The Perfect Truck, Handle Hassle-Free Export Paperwork, Ensure Secure Overseas Transactions And Provide Access To Comprehensive Shipping Services All Under One Roof. Visit Us Today And Change The Way You Buy And Sell Trucks Forever.
+                        </p>
                     </div>
-            </footer>
-        </div> -->
-    <div class="container footer-container">
-        <footer class="row footer-main">
 
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <a href="<?=base_url()?>"><img style="width:280px;" src="<?=base_url("public/assets/images/Group 3412.png")?>" alt="image"></a>
-                <div class="footer-contact-info ps-1 mt-2">
-                    <p>Trading in your current vehicle has never been easier. Use our online valuation tool to get an
-                        instant estimate.</p>
-                    <!-- <div><img src="<?=base_url('public/assets/images/email.png')?>" class="pe-2" alt="image"><span>autohaussac@gmail.com</span></div>
-                        <div><img src="<?=base_url('public/assets/images/phone.png')?>" class="pe-2" alt="image"><span>+56-988099163</span></div>
-                        <div><img src="<?=base_url('public/assets/images/location.png')?>" class="pe-2" alt="image"><span class="d-inline-flex">Av.Circunvalacion. Zona Franca<br> Durban - South Africa</span></div> -->
-                </div>
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-sm-6 footer-column">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="<?=base_url('contact')?>">Get In Touch</a></li>
+                            <li><a href="<?=base_url('help')?>">Help Center</a></li>
+                            <li><a href="#">Live Chat</a></li>
+                            <li><a href="<?=base_url('how-it-works')?>">How It Works</a></li>
+                        </ul>
+                    </div>
 
-            </div>
+                    <!-- Our Brands -->
+                    <div class="col-lg-2 col-md-6 col-sm-6 footer-column">
+                        <h4>Our Brands</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="<?=base_url('make/Chevrolet')?>">Chevrolet</a></li>
+                            <li><a href="<?=base_url('make/Ford')?>">Ford</a></li>
+                            <li><a href="<?=base_url('make/GMC')?>">GMC</a></li>
+                            <li><a href="<?=base_url('make/Toyota')?>">Toyota</a></li>
+                            <li><a href="<?=base_url('make/Nissan')?>">Nissan</a></li>
+                            <li><a href="<?=base_url('make/Mazda')?>">Mazda</a></li>
+                        </ul>
+                    </div>
 
-            <div class="col-lg-3 col-md-3 col-sm-6">
-                <h4>Quick Links</h4>
-                <ul class="footer-nav list-unstyled ">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="<?=base_url()?>">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=base_url('stock')?>">Stock</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=base_url('about')?>">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=base_url('testimonials')?>">Testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=base_url('contact')?>">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+                    <!-- Vehicles Type -->
+                    <div class="col-lg-2 col-md-6 col-sm-6 footer-column">
+                        <h4>Vehicles Type</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="<?=base_url('body/SUV')?>">SUV / Crossover</a></li>
+                            <li><a href="<?=base_url('body/Coupe')?>">Coupe</a></li>
+                            <li><a href="<?=base_url('body/Flatbed')?>">Flatbed Truck</a></li>
+                            <li><a href="<?=base_url('body/Dump')?>">Dump Truck</a></li>
+                            <li><a href="<?=base_url('body/Tanker')?>">Tanker Truck</a></li>
+                            <li><a href="<?=base_url('body/Tipper')?>">Tipper Truck</a></li>
+                        </ul>
+                    </div>
 
-
-
-            <div class="col-lg-3 col-md-3 col-sm-6 footer-makes">
-                <h4>Browse Cars</h4>
-                <ul class="footer-nav list-unstyled ">
-                    <li class="nav-item">
-                        <a target="_blank" class="nav-link" aria-current="page"
-                            href="<?=base_url('make/Honda')?>">Honda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a target="_blank" class="nav-link" href="<?=base_url('make/Toyota')?>">Toyota</a>
-                    </li>
-                    <li class="nav-item">
-                        <a target="_blank" class="nav-link" href="<?=base_url('make/Renault')?>">Renault</a>
-                    </li>
-                    <li class="nav-item">
-                        <a target="_blank" class="nav-link" href="<?=base_url('make/Hyundai')?>">Hyundai</a>
-                    </li>
-                    <li class="nav-item">
-                        <a target="_blank" class="nav-link" href="<?=base_url('make/Genesis')?>">Genesis</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6  col-sm-6 mb-5">
-                <h4 class="text-center">Join to get offer from Autocraft Korea lnc </h4>
-                <!-- <div class="email-container">
-                
-                            <div class="email-input">
-                            <input type="text" id="email_id" name="email_id" placeholder="Enter Your Email">
-                            <button type="submit" id="submit_subscribe"></button>
+                    <!-- Connect With Us -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 footer-column footer-social">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-x"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-               
-                </div> -->
-                <div class="form-input d-flex flex-column">
-
-                    <input type="text" id="email_id" name="email_id" placeholder="Write Your Email"
-                        class="form-control ps-3">
-                    <button type="submit" id="submit_subscribe" class="btn btn-secondary">Subscribe</button>
-                    <div id="loader" class="d-none text-center mt-3">
-                        <div class="spinner-border text-success" role="status"></div>
                     </div>
-                    <h6 id="alert_msg" class="d-none alert text-center"></h6>
                 </div>
+            </footer>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">autocraftkaitori <?=date('Y')?>. All rights reserved</p>
             </div>
-
-            <!-- <div class="col-lg-2 col-md-6 ">
-                <div class="social-container">
-                    <a href="https://www.facebook.com" class="social-button" target="_blank">
-                        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png" alt="Facebook">
-                        Facebook
-                    </a>
-
-                    <a href="https://www.linkedin.com" class="social-button" target="_blank">
-                        <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
-                        LinkedIn
-                    </a>
-
-                    <a href="https://www.twitter.com" class="social-button" target="_blank">
-                        <img src="https://img.icons8.com/ios-filled/50/ffffff/x.png" alt="Twitter">
-                        X
-                    </a>
-
-                    <a href="https://www.instagram.com" class="social-button" target="_blank">
-                        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
-                        Instagram
-                    </a>
-                </div>
-            </div> -->
-
-        </footer>
-    </div>
-
-
-
-    <!-- <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer> -->
-
-    <div class="footer-bottom">
-        <footer class="container d-flex flex-wrap justify-content-center align-items-center">
-            <p class="m-0"><?=date('Y')?> © All rights reserved</p>
-            <!-- <div>
-                        <a href="">Terms</a>
-                        <a href="">Privacy</a>
-                        <a href="">Cookies</a>
-                    </div> -->
-
-        </footer>
+        </div>
     </div>
 </section>
-
 
 <script type="text/javascript">
 <?php 
@@ -181,6 +117,7 @@ var km_range_max = 1000000;
 
 <!-- script ================================================== -->
 <script src="<?=base_url('public/assets/js/jquery-1.11.0.min.js')?>"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
 <script src="<?=base_url('public/assets/js/bootstrap.min.js')?>"></script>
 <script src="<?=base_url('public/assets/js/jquery-ui.min.js')?>"></script>
 <script src="<?=base_url('public/assets/js/jquery-ui-touch-punch.js')?>"></script>

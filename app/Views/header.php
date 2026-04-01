@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+// Get URI segment
+$uri = service('uri');
+$uri = $uri->getSegment(1);
+?>
 <html lang="en">
 
 <head>
@@ -31,7 +36,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Roboto"> -->   
 
     <link rel="stylesheet" href="<?=base_url('public/assets/css/jquery-ui.min.css')?>" type="text/css">
@@ -48,9 +55,9 @@
 
 <body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
 
-    <nav class="navbar navbar-expand-lg  navbar-light container-fluid py-3 position-relative ">
+    <nav class="navbar navbar-expand-lg  navbar-light container-fluid position-relative ">
         <div class="container">
-            <a class="navbar-brand" href="<?=base_url('/')?>"><img style="width:340px;" src="<?=base_url("public/assets/images/Group 3412.png")?>"></a>
+            <a class="navbar-brand" href="<?=base_url('/')?>"><img style="width:315px;" src="<?=base_url("public/assets/images/Group 3412.png")?>"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -63,34 +70,39 @@
                         aria-label="Close"></button>
                 </div>
 
-<?php   
-        $uri = service('uri');
-        $uri = $uri->getSegment(1); 
-?>
-
                 <div class="offcanvas-body">
                     
                     <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="<?= ($uri=='') ? 'active':''; ?> nav-link px-3" aria-current="page" href="<?=base_url()?>">Home</a>
+                            <a class="<?= ($uri=='') ? 'active':''; ?> nav-link px-4" aria-current="page" href="<?=base_url()?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="<?= ($uri=='stock') ? 'active':''; ?> nav-link px-3" href="<?=base_url('stock')?>">Stock</a>
+                            <a class="<?= ($uri=='stock') ? 'active':''; ?> nav-link px-4" href="<?=base_url('stock')?>">New Arrives</a>
                         </li>
                         <li class="nav-item">
-                            <a class="<?= ($uri=='about') ? 'active':''; ?> nav-link px-3" href="<?=base_url('about')?>">About</a>
+                            <a class="<?= ($uri=='about') ? 'active':''; ?> nav-link px-4" href="<?=base_url('about')?>">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="<?= ($uri=='testimonials') ? 'active':''; ?> nav-link px-3" href="<?=base_url('testimonials')?>">Testimonials</a>
+                            <a class="<?= ($uri=='testimonials') ? 'active':''; ?> nav-link px-4" href="<?=base_url('testimonials')?>">Purchase Process</a>
                         </li>   
+                   
                         <li class="nav-item">
-                            <a class="<?= ($uri=='contact') ? 'active':''; ?> nav-link px-3" href="<?=base_url('contact')?>">Contact Us </a>
+                            <a class="<?= ($uri=='contact') ? 'active':''; ?> nav-link px-4" href="<?=base_url('contact')?>">Contact Us </a>
                         </li>
                     </ul>
 
-                    <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="<?= ($uri=='') ? '':''; ?> nav-link px-3" href="tel:+821055204441"?><i class="fas fa-phone" style="color: white;"></i>+82-10-5520-4441</a>
+                    <ul class="navbar-nav align-items-center justify-content-end pe-3">
+                        <li class="nav-item dropdown language-switcher">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-globe me-2"></i>
+                                <span>English</span>
+                                <i class="fas fa-caret-down ms-2" style="font-size: 12px;"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                <li><a class="dropdown-item active" href="#" data-lang="en">English</a></li>
+                                <li><a class="dropdown-item" href="#" data-lang="ja">Japanese</a></li>
+                                <li><a class="dropdown-item" href="#" data-lang="ko">Korean</a></li>
+                            </ul>
                         </li>
                     </ul>
 
