@@ -5,7 +5,7 @@
 
 
 <!-- hero section start  -->
-<section  class="top_banner position-relative overflow-hidden">
+<section  class="top_banner-contact position-relative overflow-hidden">
     
     <div class="container text-center">
         <div class="row">
@@ -26,25 +26,25 @@
 
 
     <div class="contact_section container">
-        <div class="row">
-            <div class="inquiry-item col-lg-8 col-md-12 col-sm-12">
+        <div class="row d-flex justify-content-around">
+            <div class="inquiry-item col-lg-7 col-md-12 col-sm-12">
                 <h2 class="fs-3 text-capitalize ">Get In Touch With Us</h2>
                 <p>Suggestion and review on how to serve you.<br>
                     We always listen, love your feedback.</p>
                 <form id="contact__frm" method="POST" class="form-group flex-wrap">
-                    <div class="col-lg-12 mb-1">
+                    <div class="col-lg-12 mb-3">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name" class="form-control ">
                     </div>
-                    <div class="col-lg-12 mb-1">
+                    <div class="col-lg-12 mb-3">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" class="form-control ">
                     </div>
-                    <div class="col-lg-12 mb-1">
+                    <div class="col-lg-12 mb-3">
                         <label for="telephone">Contact No</label>
                         <input type="text" name="telephone" id="telephone" class="form-control">
                     </div>
-                    <div class="col-lg-12 mb-1">
+                    <div class="col-lg-12 mb-3">
                         <label for="">How can we help? Write a message</label>
                         <textarea name="message" id="message" class="form-control ps-3" rows="4"></textarea>
                     </div>

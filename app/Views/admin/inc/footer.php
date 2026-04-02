@@ -2,7 +2,7 @@
   <div class="footer-inner">
     <div class="container">
       <div class="row">
-        <div class="span12"> &copy; <?=date("Y")?> <a target="_blank" href="<?=base_url("")?>">Autocraft Korea lnc</a>. </div>
+        <div class="span12"> &copy; <?=date("Y")?> <a target="_blank" href="<?=base_url("")?>">Autocraft Kaitori</a>. </div>
         <!-- /span12 --> 
       </div>
       <!-- /row --> 

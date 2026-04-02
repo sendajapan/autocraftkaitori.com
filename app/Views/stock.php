@@ -11,10 +11,10 @@
     <div class="container text-center">
         <div class="row">
             <div class="d-flex flex-wrap flex-column justify-content-center align-items-center">
-                <h2 class="page-title display-3">Cars</h2>
+                <h2 class="page-title display-3">Stock</h2>
                 <nav class="breadcrumb">
                     <a class="breadcrumb-item" href="<?=base_url()?>">Home</a>
-                    <span class="breadcrumb-item active" aria-current="page">Cars</span>
+                    <span class="breadcrumb-item active" aria-current="page">Stock</span>
                 </nav>
             </div>
         </div>
@@ -23,117 +23,110 @@
 
 </section>
 
-<section id="search" >
+<section id="search-page" >
 
 
     <div class="container search-block">
 
-        <h2 class="text-center mb-4">SEARCH <span class="text-primary"> VEHICLE </span></h2>
+        <h2 class="text-center mb-4"> <span class="text-p"> Search For Trucks </span></h2>
 
 
-        <form action="<?=base_url('stock')?>" method="post" class="row form-group flex-wrap px-3">
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+  
+
+
+
+            <form action="<?=base_url('stock')?>" method="post" class="row form-group flex-wrap p-3">
+            <div class="col-12 col-md-6 col-lg-2 mt-lg-0 p-0">
+                <label for="vehicle-make">Manufacturer</label>
                 <div class="input-group ">
-
                     <select name="make" id="vehicle-make" class="form-select form-control">
-                        <option selected value="">Select Make</option>
+                        <option selected value=""> Please Select</option>
                         <?php if($makes){
                                         foreach($makes as $item){ ?>
-                        <option
-                            <?php if(isset($user_search['make'])){if(strtoupper($user_search['make'])==strtoupper($item)){echo"selected";}}?>
-                            value="<?=$item?>"><?=$item?></option>
+                        <option value="<?=$item?>"><?=$item?></option>
                         <?php } } ?>
 
                     </select>
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            <div class="col-12 col-md-6 col-lg-2 mt-lg-0 p-0">
+                <label for="v_model">Model</label>
                 <div class="input-group ">
                     <select name="model" id="v_model" class="form-select form-control">
-                        <option value="">Select Model</option>
-                        <?php if($models){ 
-                                            foreach($models as $item){ ?>
-                        <option
-                            <?php if(isset($user_search['model'])){if(strtoupper($user_search['model'])==strtoupper(trim($item))){echo "selected";}} ?>
-                            value="<?=trim($item)?>"><?=strtoupper($item)?></option>
-                        <?php } } ?>
+                        <option value="">Please Select</option>
                     </select>
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            <!-- <div class="col-12 col-md-6 col-lg-4 mt-lg-0">
+
                 <div class="input-group ">
                     <select id="veh_condition" name="veh_condition" class="form-select form-control" id="vehicle">
-                        <option value="">Select Condition</option>
+                        <option selected>Condition</option>
                         <?php foreach($veh_condition as $item){
                                     if($item!=""){ ?>
-                        <option
-                            <?php if(isset($user_search['veh_condition'])){if($user_search['veh_condition']==$item){echo"selected";}}?>
-                            value="<?=$item?>"><?=$item?></option>
+                        <option value="<?=$item?>"><?=$item?></option>
                         <?php } } ?>
                     </select>
+
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-2 mt-lg-0 p-0">
+           <label for="body_type">Body Type</label>
                 <div class="input-group ">
                     <select id="body_type" name="body_type" class="form-select form-control">
-                        <option value="">Select Body Type</option>
+                        <option value="">Please Select</option>
                         <?php if($body_types){
                                         foreach($body_types as $item){ ?>
-                        <option
-                            <?php if(isset($user_search['body_type'])){if($user_search['body_type']==$item){echo "selected";}} ?>
-                            value="<?=$item?>"><?=$item?></option>
+                        <option value="<?=$item?>"><?=$item?></option>
                         <?php } } ?>
                     </select>
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            <div class="col-12 col-md-6 col-lg-2 mt-lg-0 p-0">
+            <label for="transmission">Transmission</label>
                 <div class="input-group ">
                     <select id="transmission" name="transmission" class="form-select form-control">
-                        <option value="">Select Transmission</option>
+                        <option value="">Please Select</option>
                         <?php if($transmissions){
                                         foreach($transmissions as $item){ ?>
-                        <option
-                            <?php if(isset($user_search['transmission'])){if($user_search['transmission']==$item){echo"selected";}}?>
-                            value="<?=$item?>"><?=$item?></option>
+                        <option value="<?=$item?>"><?=$item?></option>
                         <?php } } ?>
                     </select>
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            <div class="col-12 col-md-6 col-lg-2 mt-lg-0 p-0">
+            <label for="exterior_color">Color</label>
                 <div class="input-group ">
                     <select id="exterior_color" name="exterior_color" class="form-select form-control">
-                        <option value="">Select color</option>
+                        <option value=""> Please Select</option>
                         <?php if($colors){
                                         foreach($colors as $item){ ?>
-                        <option
-                            <?php if(isset($user_search['exterior_color'])){if($user_search['exterior_color']==$item){echo"selected";}}?>
-                            value="<?=$item?>"><?=$item?></option>
+                        <option value="<?=$item?>"><?=$item?></option>
                         <?php } } ?>
                     </select>
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            <!-- <div class="col-12 col-md-6 col-lg-4 mt-lg-0">
                 <div class="input-group ">
                     <select id="fuel" name="fuel" class="form-select form-control">
-                        <option value="">Select Fuel</option>
+                        <option value=""> Fuel</option>
                         <?php if($fuels){
                                         foreach($fuels as $item){ ?>
-                        <option
-                            <?php if(isset($user_search['fuel'])){if($user_search['fuel']==$item){echo"selected";}}?>
-                            value="<?=$item?>"><?=$item?></option>
+                        <option value="<?=$item?>"><?=$item?></option>
                         <?php } } ?>
                     </select>
 
                 </div>
-            </div>
+            </div> -->
 
+            <!-- 
+            <div class="col-12 col-md-6 col-lg-4 mt-lg-0">
 
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
                 <div class="input-group">
 
                     <select id="year_from" name="year_from" class="form-select form-control">
@@ -145,7 +138,8 @@
 
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-lg-0 mb-2">
+            <div class="col-12 col-md-6 col-lg-4 mt-lg-0">
+
                 <div class="input-group">
 
                     <select id="year_to" name="year_to" class="form-select form-control">
@@ -156,9 +150,9 @@
                     </select>
 
                 </div>
-            </div>
+            </div> -->
 
-            <!-- <div class="ps-3 col-12 col-md-6 col-lg-4 mt-4 mt-lg-0 mb-2 home-range-slider">
+            <!-- <div class="ps-3 col-12 col-md-6 col-lg-4 mt-4 mt-lg-0 home-range-slider">
                 <div class="hero__tab__form">
                     <div class="car-price">
                         <p>CC</p>
@@ -174,7 +168,7 @@
                     </div>
                 </div>
             </div> -->
-            <!-- <div class="ps-3 col-12 col-md-6 col-lg-4 mt-4 mt-lg-0 mb-2 home-range-slider">
+            <!-- <div class="ps-3 col-12 col-md-6 col-lg-4 mt-4 mt-lg-0 home-range-slider">
                 <div class="hero__tab__form">
                     <div class="car-price">
                         <p>Mileage</p>
@@ -191,15 +185,16 @@
                 </div>
             </div> -->
 
-            <div class="col-12 col-md-12 col-lg-12 mt-lg-0 mb-2">
-                <div class="d-grid" style="margin-top:33px">
-                    <input type="submit" name="submit" value="Search Car" class="btn btn-secondary">
-                </div>
+
+
+            
+        <div class=" " style="width:100%">
+            <div class="d-grid" style="width:100%">
+                <input type="submit" name="submit" value="Search For Truck" class="btn btn-secondary search-page-btn ">
             </div>
-
-        </form>
-
-
+        </div>
+        
+    </form>
     </div>
 
 </section>
@@ -213,7 +208,7 @@
 
                 <div class="stock-filter d-flex justify-content-between mb-4">
 
-                    <div class="form-group">
+                    <div class="tab-bar">
                         <label for="per_page" class="text-white">Show On Page:</label>
                         <select id="per_page" class="fiter">
                             <option value="20" <?php if(session()->per_page=='20'){echo 'selected';} ?>>20 Cars</option>
@@ -222,7 +217,7 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
+                    <div class="tab-bar">
                         <label for="sort_by" class="text-white">Sort By:</label>
                         <select id="sort_by" class="fiter">
                             <option value="year_d" <?php if(session()->sort_by=='year_d'){echo 'selected';} ?>>Year:
@@ -241,7 +236,7 @@
                 </div>
 
                 <div class="d-flex justify-content-between mb-4"><span
-                        class="fs-5 fw-bold"><?= $found.' Cars Found'?></span></div>
+                        class="fs-3 fw-bold"><?= $found.' Trucks Found'?></span></div>
 
 
 
@@ -252,61 +247,53 @@
                        
             ?>
 
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card rounded-3">
-                            <div class="card-body p-0 ">
-                                <a class="figure" target="_blank" href="<?= base_url('car/'.$item['slug']) ?>">
-                                    <?php if($item['featured_image']){ ?>
-                                    <img src="<?=$item['featured_image']?>"
-                                        class="card-img-top rounded-3" alt="...">
-                                    <?php }else{ ?>
-                                    <img src="<?=base_url("public/assets/images/test.webp")?>" class="card-img-top"
-                                        alt="...">
-                                    <?php } ?>
-                                </a>
-                                <div class="row px-4">
-                                    <div class="col-9 p-0">
-                                        <a>
-                                            <h4 class="card-title" target="_blank"
-                                                href="<?= base_url('car/'.$item['slug']) ?>">
-                                                <?= $item['make'] ?> <?= $item['model'] ?></h4>
-                                        </a>
+                  <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card vehicle-card rounded-3">
+                                <div class="card-body p-0">
+                                    <!-- Product Number Header -->
+                                    <div class="product-number-header">
+                                        Product Number: <b> <?= $item['veh_id'] ?></b>
                                     </div>
-                                    <div class="col-3 p-0">
-                                        <a href="" class="text-black">ASK</a>
-                                    </div>
-
-
-                                </div>
-                                <div class="row card-text">
-                                    <div
-                                        class="col-6 px-1 col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-12 col-sm-5 offset-sm-1 col-xs-5 offset-xs-1 d-flex flex-column align-items-baseline detail_box">
-                                        <div class="text-nowrap"><i class="fa-solid fa-gauge"></i>
-                                            <span><?= ($item['mileage']) ? number_format($item['mileage']).' km' : '-'; ?></span>
+                                    <!-- Image -->
+                                    <a class="figure" target="_blank" href="<?= base_url('car/'.$item['slug']) ?>">
+                                        <?php if($item['featured_image']){ ?>
+                                        <img src="<?=$item['featured_image']?>" class="card-img-top vehicle-card-img"
+                                            alt="<?= $item['make'] ?> <?= $item['model'] ?>">
+                                        <?php }else{ ?>
+                                        <img src="<?=base_url("public/assets/images/test.webp")?>" class="card-img-top vehicle-card-img"
+                                            alt="...">
+                                        <?php } ?>
+                                    </a>
+                                    <!-- Vehicle Info -->
+                                    <div class="vehicle-card-content">
+                                        <h4 class="vehicle-title m-0 px-0 px-sm-1"><?= $item['make'] ?> <?= $item['model'] ?> <?= $item['year'] ?? '' ?> <?= $item['exterior_color'] ?? '' ?></h4>
+                                        <p class="vehicle-dimensions text-start text-md-center">Length 625 x Width 225 x Height 333</p>
+                                        
+                                        <!-- Specs Row -->
+                                        <div class="vehicle-specs">
+                                            <div class="spec-item">
+                                                <span class="spec-label">Mileage</span>
+                                                <span class="spec-value"><?= ($item['mileage']) ? number_format($item['mileage']).' KM' : '-'; ?></span>
+                                            </div>
+                                            <div class="spec-item">
+                                                <span class="spec-label">Horsepower</span>
+                                                <span class="spec-value"><?= $item['cc'] ?? '-' ?></span>
+                                            </div>
+                                            <div class="spec-item">
+                                                <span class="spec-label">Transmission</span>
+                                                <span class="spec-value"><?= $item['transmission'] ?? 'F6' ?></span>
+                                            </div>
                                         </div>
-                                        <div class="text-nowrap"><i class="fa-solid fa-palette"></i>
-                                            <span><?=$item['exterior_color']?></span>
-                                        </div>
-                                        <div class="text-nowrap"><i class="fa-solid fa-gas-pump"></i>
-                                            <span><?=$item['fuel']?> </span>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="col-6 px-1 col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-12 col-sm-5 offset-sm-1 col-xs-5 offset-xs-1 d-flex flex-column align-items-baseline detail_box">
-                                        <div class="text-nowrap"><i class="fa-solid fa-calendar"></i>
-                                            <span><?=$item['year']?></span>
-                                        </div>
-                                        <div class="text-nowrap"><i class="fa-solid fa-dharmachakra"></i>
-                                            <span><?=$item['drive']?></span>
-                                        </div>
-                                        <div class="text-nowrap"><i class="fa-solid fa-gears"></i>
-                                            <span><?=$item['transmission']?></span>
+                                        
+                                        <!-- Price and View Details -->
+                                        <div class="vehicle-footer">
+                                            <div class="vehicle-price">¥<?= isset($item['price']) ? number_format($item['price']) : 'ASK' ?></div>
+                                            <a href="<?= base_url('car/'.$item['slug']) ?>" class="view-details-link">View Details <i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
                     <?php }  }else{ ?>
 

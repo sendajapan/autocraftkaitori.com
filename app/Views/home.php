@@ -80,7 +80,7 @@
                 </div>
             </div> -->
             <div class="col-12 col-md-6 col-lg-2 mt-lg-0 px-3">
-       <label for="body_type">Body Type</label>
+           <label for="body_type">Body Type</label>
                 <div class="input-group ">
                     <select id="body_type" name="body_type" class="form-select form-control">
                         <option value="">Please Select</option>
@@ -106,7 +106,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-2 mt-lg-0 px-3">
-          <label for="exterior_color">Color</label>
+            <label for="exterior_color">Color</label>
                 <div class="input-group ">
                     <select id="exterior_color" name="exterior_color" class="form-select form-control">
                         <option value=""> Please Select</option>
@@ -131,7 +131,7 @@
                 </div>
             </div> -->
 
-        <!-- 
+            <!-- 
             <div class="col-12 col-md-6 col-lg-4 mt-lg-0">
 
                 <div class="input-group">

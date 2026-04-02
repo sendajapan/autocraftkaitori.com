@@ -3,7 +3,7 @@
 
 <?= $this->section('content') ?>
 
-<section class="top_banner position-relative overflow-hidden">
+<section class="top_banner-about position-relative overflow-hidden">
     <div class="container text-center">
         <div class="row">
             <div class="d-flex flex-wrap flex-column justify-content-center align-items-center">
@@ -24,7 +24,7 @@
     <div class="row">
             <div class="about col-lg-5 col-md-6 col-sm-12">
                 <div class="car-bg">
-                    <img src="<?=base_url('public/assets/images/Group 3415 blue color.webp')?>" alt="">
+                    <img src="<?=base_url('public/assets/images/Group 1707478814.png')?>" alt="">
                 </div>
             </div>
             <div class="col-lg-7 col-md-6 col-sm-12">
@@ -64,7 +64,7 @@
                     <p>At Autocraft Korea lnc, we are deeply passionate about cars and dedicated to delivering an exceptional experience to each customer. Our team of knowledgeable and friendly professionals is here to guide you in finding the ideal vehicle that fits your lifestyle and budget. Whether you're a first-time buyer or looking to upgrade, we offer a carefully curated selection of high-quality used and new vehicles to meet your needs.</p>
                     <div class="row about_img d-flex justify-content-between my-5">
                         <div class="img1 col-md-12 text-center">
-                            <img class="img-fluid" src="<?=base_url('public/assets/images/Desktop - 2.webp')?>" alt="">
+                            <img class="img-fluid" src="<?=base_url('public/assets/images/Group 1707478815.png')?>" alt="">
                         </div>
                        
                     </div>

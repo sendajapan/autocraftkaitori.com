@@ -66,6 +66,22 @@ html, body {
   text-transform: capitalize;
 }
 
+.top_banner-about{
+  background-image: url('../images/image 711.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; 
+  padding: 151px 0 183px;
+}
+
+.top_banner-contact {
+  background-image: url('../images/image 710 (1).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; 
+  padding: 151px 0 183px;
+}
+
 .top_banner{
   background-image: url('../images/Group112.png');
   background-repeat: no-repeat;
@@ -110,9 +126,9 @@ textarea:focus {
     }
 
 .stock-filter{
-  background: var(--accent-color);
+  background: var(--blue);
   box-shadow: 0px 12px 90px rgba(12, 12, 12, 0.06);
-  padding: 6px 30px;
+  padding: 15px 30px;
 }
 
 .stock-filter .form-group {
@@ -138,9 +154,13 @@ color: var(--heading-color);
 select.fiter {
   background-color: #f2f2f2;
   border: 1px solid #ccc;
-  padding: 5px 10px;
-  font-size: 16px;
+  padding: 5px 3px;
+  font-size: 15px;
   cursor: pointer;
+  border-radius: 8px;
+  width: 130px;
+  color: var(--blue);
+  margin: 0 10px;
 }
 
 select.fiter:focus { 
@@ -339,6 +359,19 @@ Contact page style start
   color: red;
 }
 
+#contact__frm input, #contact__frm textarea {
+  background-color: #E9E9E9;
+  padding: 5px;
+}
+
+#contact__frm label{
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  font-family: var(--heading-font);
+  color: var(--body-text-color);
+}
+
 .contact-us-wrap{
   margin-top: 70px;
   margin-bottom: 70px;
@@ -399,7 +432,7 @@ color: var(--accent-color);
 }
 
 .contact-info{
-  background-image: url('../images/11.webp');
+  background-image: url('../images/image 710.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 20px 120px 20px;
@@ -709,6 +742,83 @@ color: white;
     line-height: 24.55px;
     text-align: left;
   }
+
+  #search-page{
+    margin-top: -145px;
+    
+  }
+
+  
+  #search-page .text-p{
+    color: var(--blue);
+    font-family: var(--heading-color);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 0;
+  }
+
+  
+  #search-page .search-block{
+    border-radius: 0;
+    box-shadow: 0px 0px 39.5px 0px #00000040;
+    background-color: var(--white-color);
+    padding: 65px 70px;
+  }
+
+    #search-page form{
+      display: flex;
+    justify-content: space-between;
+    gap: 17px;
+    }
+
+      #search-page form div{
+        width: 250px;
+      }
+
+   #search-page .form-control{
+    background-color: #E9E9E9;
+    padding: 7px 21px;
+    font-size: 17px;
+    margin-top: 10px;
+   }
+
+   .search-page-btn{
+    padding: 10px;
+    background-color: var(--blue);
+    box-shadow: 0px 4.05px 4.05px 0px #00000040;
+margin-top: 20px;
+   }
+
+
+.tab-bar{
+  font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
 *,
 *::before,
