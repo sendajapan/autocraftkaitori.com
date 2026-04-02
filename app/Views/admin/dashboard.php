@@ -17,7 +17,7 @@
             <div class="widget-content">
               <div class="widget big-stats-container">
                 <div class="widget-content">
-                  <h6 class="bigstats">Wellcome to Autocraft Korea lnc Administrative Panel.</h6>
+                  <h6 class="bigstats">Wellcome to Autocraft Kaitori Administrative Panel.</h6>
                   
 
 				  
@@ -39,7 +39,7 @@
             <div class="widget-content">
 
 
-			       <h2>Direct Import Vehicle From AVIS  &nbsp;<a href="<?=base_url('admin/vehicle/import_from_avis')?>" class="btn btn-success btn-large">GO TO LINK</a></h3>
+			       <!-- <h2>Direct Import Vehicle From AVIS  &nbsp;<a href="<?=base_url('admin/vehicle/import_from_avis')?>" class="btn btn-success btn-large">GO TO LINK</a></h2> -->
 		
 
 		

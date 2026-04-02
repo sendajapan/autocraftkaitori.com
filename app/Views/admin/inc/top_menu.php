@@ -1,7 +1,7 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container"> 
-	<a class="brand" href="<?=base_url('admin/dashboard')?>">Autocraft Korea lnc</a>
+	<a class="brand" href="<?=base_url('admin/dashboard')?>">Autocraft Kaitori</a>
 
       <!--/.nav-collapse --> 
     </div>
