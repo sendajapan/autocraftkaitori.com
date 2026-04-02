@@ -1057,7 +1057,7 @@ $(document).on('click', '#newsletter_submit', function(e) {
         $("#newsletter_loader").removeClass("d-none");
 
         grecaptcha.ready(function() {
-            grecaptcha.execute('6LenXaYqAAAAAOpYOl81pk5ADV9DZq2BpNNo-TNr', {
+            grecaptcha.execute('6Ldd_aIsAAAAAB5CYIN__YUFxTMYlbUTJzEuxV3c', {
                 action: 'submit'
             }).then(function(token) {
 
