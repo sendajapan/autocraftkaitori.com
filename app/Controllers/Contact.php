@@ -45,7 +45,7 @@ class Contact extends BaseController
 
             $token = $this->request->getPost('recaptcha_token');
 
-            $secret_key = '6Ldd_aIsAAAAAB5CYIN__YUFxTMYlbUTJzEuxV3c';
+            $secret_key = '6LenXaYqAAAAAKbuGJoO7UFoIKieHojgJZYPaCro';
 
             $response = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret_key.'&response='.$token);
 

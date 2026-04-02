@@ -136,7 +136,7 @@ var km_range_max = 1000000;
 <script src="<?=base_url('public/assets/js/swiper-bundle.min.js')?>"></script>
 
 
-<script src="https://www.google.com/recaptcha/api.js?render=6Ldd_aIsAAAAAB5CYIN__YUFxTMYlbUTJzEuxV3c"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LenXaYqAAAAAOpYOl81pk5ADV9DZq2BpNNo-TNr"></script>
 <script>
 $(document).on('click', '#submit_subscribe', function(e) {
 
@@ -148,7 +148,7 @@ $(document).on('click', '#submit_subscribe', function(e) {
         $("#loader").removeClass("d-none");
 
         grecaptcha.ready(function() {
-            grecaptcha.execute('6Ldd_aIsAAAAAB5CYIN__YUFxTMYlbUTJzEuxV3c', {
+            grecaptcha.execute('6LenXaYqAAAAAOpYOl81pk5ADV9DZq2BpNNo-TNr', {
                 action: 'submit'
             }).then(function(token) {
 

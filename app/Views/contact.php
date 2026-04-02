@@ -93,7 +93,7 @@
 
 <?= $this->section('scripts') ?>
 
-<script src="https://www.google.com/recaptcha/api.js?render=6Ldd_aIsAAAAAGp3izoqumj9x8VV6GoGBwQEKAe7"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LenXaYqAAAAAOpYOl81pk5ADV9DZq2BpNNo-TNr"></script>
 <script>
 
         jQuery('#contact__frm').validate({
@@ -131,7 +131,7 @@
             submitHandler: function(){
 
                 grecaptcha.ready(function() {
-                  grecaptcha.execute('6Ldd_aIsAAAAAGp3izoqumj9x8VV6GoGBwQEKAe7', {action: 'submit'}).then(function(token) {
+                  grecaptcha.execute('6LenXaYqAAAAAOpYOl81pk5ADV9DZq2BpNNo-TNr', {action: 'submit'}).then(function(token) {
                       
                 
                         $("#submit_btn").hide();
