@@ -18,10 +18,11 @@
                     <div class="col-lg-2 col-md-6 col-sm-6 footer-column">
                         <h4>Quick Links</h4>
                         <ul class="footer-links list-unstyled">
-                            <li><a href="<?=base_url('contact')?>">Get In Touch</a></li>
-                            <li><a href="<?=base_url('help')?>">Help Center</a></li>
-                            <li><a href="#">Live Chat</a></li>
-                            <li><a href="<?=base_url('how-it-works')?>">How It Works</a></li>
+                            <li><a href="<?=base_url()?>">Home</a></li>
+                            <li><a href="<?=base_url('stock')?>">New Stock</a></li>
+                            <li><a href="<?=base_url('about')?>">About Us</a></li>
+                            <li><a href="<?=base_url('purchase-process')?>">Purchase Process</a></li>
+                            <li><a href="<?=base_url('contact')?>">Contact Us</a></li>
                         </ul>
                     </div>
 
