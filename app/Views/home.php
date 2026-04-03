@@ -13,7 +13,7 @@
                 <div class="detail mb-4">
     <h1>Your Gateway to Global Truck Exports</h1>
     <p>Reliable trucks, transparent pricing and smooth overseas delivery handled end to end.</p>
-    <button class="btn btn-primary">GET A FREE QUOTE</button>
+    <a href="<?=base_url('contact')?>" class="btn btn-primary">GET A FREE QUOTE</a>
                 </div>
             </div>
 

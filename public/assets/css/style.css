@@ -2565,7 +2565,14 @@ New Vehicle Card Styles (matching image design)
       padding: 30px !important;
     }
 }
-
+@media only screen and (max-width: 1299px) {
+.clearance-carousel .owl-nav button.owl-prev{
+    left: -40px;
+}
+.clearance-carousel .owl-nav button.owl-next{
+      right: -40px;
+}
+}
 
 /* Responsive adjustments */
 @media screen and (max-width: 1200px) {
@@ -2847,9 +2854,11 @@ Browse by Make Section Styles
 }
 
 .makes-carousel .owl-nav button:hover {
-  background: var(--accent-color) !important;
+  background: var(--heading-color) !important;
   color: #ffffff !important;
+  border: 1px solid ;
 }
+
 
 .makes-carousel .owl-nav button i {
   font-size: 16px;
