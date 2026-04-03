@@ -91,7 +91,7 @@ $uri = $uri->getSegment(1);
                         </li>
                     </ul>
 
-                    <ul class="navbar-nav align-items-center justify-content-end pe-3">
+                    <!-- <ul class="navbar-nav align-items-center justify-content-end pe-3">
                         <li class="nav-item dropdown language-switcher">
                             <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-globe me-2"></i>
@@ -104,7 +104,7 @@ $uri = $uri->getSegment(1);
                                 <li><a class="dropdown-item" href="#" data-lang="ko">Korean</a></li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul> -->
 
 
 

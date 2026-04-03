@@ -69,7 +69,7 @@
         <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="container">
-                <p class="copyright">autocraftkaitori <?=date('Y')?>. All rights reserved</p>
+                <p class="copyright"><?=date('Y')?>. All Rights Reserved</p>
             </div>
         </div>
     </div>

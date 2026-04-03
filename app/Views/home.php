@@ -567,7 +567,7 @@
                     </div>
                     <div class="benefit-content">
                         <h3 class="benefit-title">Over 3,000 units traded annually</h3>
-                        <p class="benefit-desc">Autocraft kaitori has accumulated experience buying and selling from many customers, so you can rest assured that you can leave it to us.</p>
+                        <p class="benefit-desc">Autocraft Kaitori has accumulated experience buying and selling from many customers, so you can rest assured that you can leave it to us.</p>
                     </div>
                 </div>
             </div>
@@ -579,7 +579,7 @@
                     </div>
                     <div class="benefit-content">
                         <h3 class="benefit-title">Logos and sign must be removed</h3>
-                        <p class="benefit-desc">At auto auctions overseas, you often see vehicles with company names still on them. Autocraft kaitori will remove and repaint</p>
+                        <p class="benefit-desc">At auto auctions overseas, you often see vehicles with company names still on them. Autocraft Kaitori will remove and repaint</p>
                     </div>
                 </div>
             </div>
@@ -591,7 +591,7 @@
                     </div>
                     <div class="benefit-content">
                         <h3 class="benefit-title">Accident Trucks, flood damaged</h3>
-                        <p class="benefit-desc">If you have any problems with your vehicle, such as an unexpected accident, please feel free to contact Autocraft kaitori</p>
+                        <p class="benefit-desc">If you have any problems with your vehicle, such as an unexpected accident, please feel free to contact Autocraft Kaitori</p>
                     </div>
                 </div>
             </div>
