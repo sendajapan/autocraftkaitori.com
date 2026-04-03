@@ -2495,9 +2495,12 @@ New Vehicle Card Styles (matching image design)
 
 
 @media screen and (max-width: 575px) {
-  .top_banner{
+  /* .top_banner{
     padding: 85px 0 43px;
-  }
+  } */
+.top_banner-about, .top_banner-process, .top_banner-contact{
+  padding: 90px 0;
+}
 
   .detail_box{
     padding-left: 30px !important;
@@ -3012,6 +3015,22 @@ About Us Section Styles
   .about-content {
     padding-right: 0;
     margin-bottom: 30px;
+    display: flex;
+        flex-direction: column;
+  }
+
+
+  #search-page form div{
+            width: 160px;
+  }
+
+  .tab-bar{
+    font-size: 15px;
+  }
+
+  select.fiter{
+        width: 75px;
+        margin: 0;
   }
   
   
@@ -4012,6 +4031,7 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   .about-content h4,
   .about-content p {
     text-align: center;
+    font-size: 16px;
   }
   
   .read-more-btn {
