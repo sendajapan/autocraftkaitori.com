@@ -3936,7 +3936,8 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   .detail > .btn-primary {
     display: block;
     margin: 0 auto;
-    padding: 12px 30px;
+    padding: 10px 15px;
+        width: 245px;
   }
   
   /* Vehicle Type Buttons - Full width */
@@ -4088,7 +4089,7 @@ RESPONSIVE BREAKPOINTS FOR 1520px CONTAINER
   }
   
   .detail > h1 {
-    font-size: 28px;
+    font-size: 23px;
   }
   
   .detail > p {
