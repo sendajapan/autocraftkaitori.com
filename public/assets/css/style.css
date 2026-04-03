@@ -1645,7 +1645,7 @@ a.nav-link:hover {
     margin-bottom: 20px;
   }
   .search-block {
-    position: static;
+    /* position: static; */
     margin-top: 0;
   }
 
@@ -2572,6 +2572,14 @@ New Vehicle Card Styles (matching image design)
 .clearance-carousel .owl-nav button.owl-next{
       right: -40px;
 }
+
+#search-page form div{
+  width: 190px;
+}
+
+.process-container{
+  background-size: cover;
+}
 }
 
 /* Responsive adjustments */
@@ -3470,7 +3478,7 @@ Footer Section Styles
 
 .footer-logo {
   /* width: 180px; */
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .footer-desc {
