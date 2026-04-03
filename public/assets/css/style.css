@@ -105,13 +105,13 @@ input[type="email"]:focus {
   background: var(--medium-grey-color) !important;
 } */
 
-select:focus {
+/* select:focus {
   background: var(--background-color) !important;
-}
+} */
 
-textarea:focus {
+/* textarea:focus {
   background: var(--medium-grey-color) !important;
-}
+} */
 
 .red-bg-left {
         background: #E03C31; width: 30%; height:88%
@@ -169,6 +169,8 @@ select.fiter {
   color: var(--blue);
   margin: 0 10px;
 }
+
+
 
 select.fiter:focus { 
   outline: none; 
@@ -1623,6 +1625,49 @@ iconify-icon.search-icons {
 }
 .search-icon-position {
   right: 0;
+}
+
+/* Styling for select dropdowns with form-control class */
+select.form-control {
+  /* appearance: auto; */
+  /* -webkit-appearance: menulist; */
+  /* -moz-appearance: menulist; */
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 16px;
+  min-height: 40px;
+}
+
+/* Style the dropdown options */
+select.form-control option {
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: #ffffff;
+  color: #333333;
+  min-height: 35px;
+  line-height: 1.5;
+}
+
+/* Hover and selected states for options */
+select.form-control option:hover,
+select.form-control option:focus,
+select.form-control option:checked {
+  background-color: var(--blue) !important;
+  color: #ffffff !important;
+}
+
+/* For Webkit browsers (Chrome, Safari) - style the dropdown list */
+select.form-control::-webkit-listbox {
+  padding: 8px;
+}
+
+/* Focus state for select */
+select.form-control:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 2px rgba(65, 141, 197, 0.2);
+  outline: none;
 }
 
 @media only screen and (max-width: 992px) {

@@ -10,7 +10,7 @@
                             <img src="<?=base_url("public/assets/images/Group 3412.png")?>" alt="Autocraft Kaitori" class="footer-logo">
                         </a>
                         <p class="footer-desc">
-                            'At Autocraft Kaitori, We Proudly Help You Choose The Perfect Truck, Handle Hassle-Free Export Paperwork, Ensure Secure Overseas Transactions And Provide Access To Comprehensive Shipping Services All Under One Roof. Visit Us Today And Change The Way You Buy And Sell Trucks Forever.
+                            At Autocraft Kaitori, We Proudly Help You Choose The Perfect Truck, Handle Hassle-Free Export Paperwork, Ensure Secure Overseas Transactions And Provide Access To Comprehensive Shipping Services All Under One Roof. Visit Us Today And Change The Way You Buy And Sell Trucks Forever.
                         </p>
                     </div>
 
@@ -30,10 +30,10 @@
                     <div class="col-lg-2 col-md-6 col-sm-6 footer-column">
                         <h4>Our Brands</h4>
                         <ul class="footer-links list-unstyled">
-                            <li><a href="<?=base_url('make/Chevrolet')?>">Chevrolet</a></li>
-                            <li><a href="<?=base_url('make/Ford')?>">Ford</a></li>
-                            <li><a href="<?=base_url('make/GMC')?>">GMC</a></li>
-                            <li><a href="<?=base_url('make/Toyota')?>">Toyota</a></li>
+                            <li><a href="<?=base_url('make/Fusu')?>">Fusu</a></li>
+                            <li><a href="<?=base_url('make/Isuzu')?>">Isuzu</a></li>
+                            <li><a href="<?=base_url('make/Hino')?>">Hino</a></li>
+                            <li><a href="<?=base_url('make/Honda')?>">Honda</a></li>
                             <li><a href="<?=base_url('make/Nissan')?>">Nissan</a></li>
                             <li><a href="<?=base_url('make/Mazda')?>">Mazda</a></li>
                         </ul>

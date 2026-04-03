@@ -396,37 +396,37 @@
         <div class="d-flex justify-content-center">
             <div class="makes-carousel owl-carousel">
                 <div class="item">
-                    <a href="<?=base_url('make/Genesis')?>">
+                    <a href="<?=base_url('make/Fuso')?>">
                         <div class="make-card">
-                            <img src="<?=base_url("public/assets/images/makes/image 692.png")?>" alt="Genesis">
+                            <img src="<?=base_url("public/assets/images/makes/fuso.png")?>" alt="Genesis">
                         </div>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="<?=base_url('make/Kia')?>">
+                    <a href="<?=base_url('make/Isuzu')?>">
                         <div class="make-card">
-                            <img src="<?=base_url("public/assets/images/makes/image 691.png")?>" alt="Kia">
+                            <img src="<?=base_url("public/assets/images/makes/isuzu.png")?>" alt="Kia">
                         </div>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="<?=base_url('make/Renault')?>">
+                    <a href="<?=base_url('make/Hino')?>">
                         <div class="make-card">
-                            <img src="<?=base_url("public/assets/images/makes/image 693.png")?>" alt="Renault">
+                            <img src="<?=base_url("public/assets/images/makes/hino.png")?>" alt="Renault">
                         </div>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="<?=base_url('make/Hyundai')?>">
+                    <a href="<?=base_url('make/Mazda')?>">
                         <div class="make-card">
-                            <img src="<?=base_url("public/assets/images/makes/image 694.png")?>" alt="Hyundai">
+                            <img src="<?=base_url("public/assets/images/makes/mazda.png")?>" alt="Hyundai">
                         </div>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="<?=base_url('make/Toyota')?>">
+                    <a href="<?=base_url('make/Nissan')?>">
                         <div class="make-card">
-                            <img src="<?=base_url("public/assets/images/makes/image 696.png")?>" alt="Toyota">
+                            <img src="<?=base_url("public/assets/images/makes/nissan.png")?>" alt="Toyota">
                         </div>
                     </a>
                 </div>
@@ -567,7 +567,7 @@
                     </div>
                     <div class="benefit-content">
                         <h3 class="benefit-title">Over 3,000 units traded annually</h3>
-                        <p class="benefit-desc">Enefree has accumulated experience buying and selling from many customers, so you can rest assured that you can leave it to us.</p>
+                        <p class="benefit-desc">Autocraft kaitori has accumulated experience buying and selling from many customers, so you can rest assured that you can leave it to us.</p>
                     </div>
                 </div>
             </div>
@@ -579,7 +579,7 @@
                     </div>
                     <div class="benefit-content">
                         <h3 class="benefit-title">Logos and sign must be removed</h3>
-                        <p class="benefit-desc">At auto auctions overseas, you often see vehicles with company names still on them. Enefree will remove and repaint</p>
+                        <p class="benefit-desc">At auto auctions overseas, you often see vehicles with company names still on them. Autocraft kaitori will remove and repaint</p>
                     </div>
                 </div>
             </div>
@@ -591,7 +591,7 @@
                     </div>
                     <div class="benefit-content">
                         <h3 class="benefit-title">Accident Trucks, flood damaged</h3>
-                        <p class="benefit-desc">If you have any problems with your vehicle, such as an unexpected accident, please feel free to contact Enefree.</p>
+                        <p class="benefit-desc">If you have any problems with your vehicle, such as an unexpected accident, please feel free to contact Autocraft kaitori</p>
                     </div>
                 </div>
             </div>
