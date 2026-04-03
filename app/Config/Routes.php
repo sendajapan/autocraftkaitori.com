@@ -13,6 +13,7 @@ $routes->match(['get', 'post'], 'stock', 'Stock::index');
 $routes->get('make/(:any)','Stock::index');
 $routes->get('contact', 'Contact::index');
 $routes->get('about', 'About::index');
+$routes->get('purchase-process', 'PurchaseProcess::index');
 $routes->get('testimonials', 'Testimonials::index');
 $routes->get('car/(:any)','Stock::carDetail/$1'); //car detail
 $routes->get('model/(:any)/(:any)','Stock::index');

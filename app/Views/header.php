@@ -77,13 +77,13 @@ $uri = $uri->getSegment(1);
                             <a class="<?= ($uri=='') ? 'active':''; ?> nav-link px-3" aria-current="page" href="<?=base_url()?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="<?= ($uri=='stock') ? 'active':''; ?> nav-link px-3" href="<?=base_url('stock')?>">New Arrives</a>
+                            <a class="<?= ($uri=='stock') ? 'active':''; ?> nav-link px-3" href="<?=base_url('stock')?>">New Stock</a>
                         </li>
                         <li class="nav-item">
                             <a class="<?= ($uri=='about') ? 'active':''; ?> nav-link px-3" href="<?=base_url('about')?>">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="<?= ($uri=='testimonials') ? 'active':''; ?> nav-link px-3" href="<?=base_url('testimonials')?>">Purchase Process</a>
+                            <a class="<?= ($uri=='purchase-process') ? 'active':''; ?> nav-link px-3" href="<?=base_url('purchase-process')?>">Purchase Process</a>
                         </li>   
                    
                         <li class="nav-item">
