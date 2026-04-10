@@ -9,10 +9,10 @@ class ImportTrucks extends BaseController
     {
         // Create connection to autocraftjapan database
         $autocraftDB = \Config\Database::connect([
-            'hostname' => 'globa225_autocraftkaitori',
+            'hostname' => 'localhost',
             'username' => 'globa225_autocraftkaitori',
             'password' => '.T{vDNfVWAYH',
-            'database' => 'autocraftjapan_ci',
+            'database' => 'globa225_autocraftkaitori',
             'DBDriver' => 'MySQLi',
             'DBPrefix' => '',
             'pConnect' => false,
