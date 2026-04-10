@@ -10,9 +10,9 @@ class ImportTrucks extends BaseController
         // Create connection to autocraftjapan database
         $autocraftDB = \Config\Database::connect([
             'hostname' => 'localhost',
-            'username' => 'globa225_autocraftkaitori',
-            'password' => '.T{vDNfVWAYH',
-            'database' => 'globa225_autocraftkaitori',
+            'username' => 'root',
+            'password' => '',
+            'database' => 'autocraftjapan_ci',
             'DBDriver' => 'MySQLi',
             'DBPrefix' => '',
             'pConnect' => false,
@@ -30,12 +30,12 @@ class ImportTrucks extends BaseController
         // Get 50 trucks from autocraftjapan (trucks only, with images if required)
         if ($withImagesOnly) {
             // Only get trucks that have images in tb_aucnet_truck_pictures
+            // Use a subquery to get the first image for each truck
             $trucks = $autocraftDB->query("
-                SELECT v.*, p.pic_url as featured_image 
+                SELECT v.* 
                 FROM tbl_vehicles v
-                INNER JOIN tb_aucnet_truck_pictures p ON v.veh_id = p.veh_id
                 WHERE v.body_type LIKE '%truck%' 
-                GROUP BY v.veh_id
+                    AND (v.featured_image IS NOT NULL OR EXISTS (SELECT 1 FROM tb_aucnet_truck_pictures WHERE veh_id = v.veh_id))
                 ORDER BY v.veh_id DESC 
                 LIMIT 50
             ")->getResultArray();
@@ -63,11 +63,14 @@ class ImportTrucks extends BaseController
                 continue;
             }
 
-            // Get featured image (already fetched in query if withImagesOnly=true)
-            $featuredImage = isset($truck['featured_image']) ? $truck['featured_image'] : null;
+            // Get featured image - priority: 1) tbl_vehicles.featured_image, 2) tb_aucnet_truck_pictures
+            $featuredImage = null;
             
-            // If not already fetched, try to get it
-            if (!$featuredImage) {
+            // First check if featured_image exists in tbl_vehicles
+            if (!empty($truck['featured_image'])) {
+                $featuredImage = $truck['featured_image'];
+            } else {
+                // Fall back to tb_aucnet_truck_pictures
                 $imageRow = $autocraftDB->query("
                     SELECT pic_url FROM tb_aucnet_truck_pictures 
                     WHERE veh_id = ? 
