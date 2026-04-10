@@ -15,6 +15,7 @@ $routes->get('contact', 'Contact::index');
 $routes->get('about', 'About::index');
 $routes->get('purchase-process', 'PurchaseProcess::index');
 $routes->get('testimonials', 'Testimonials::index');
+$routes->get('admin/import-trucks', 'admin\ImportTrucks::index');
 $routes->get('car/(:any)','Stock::carDetail/$1'); //car detail
 $routes->get('model/(:any)/(:any)','Stock::index');
 $routes->post('get-models', 'Home::getModels');
