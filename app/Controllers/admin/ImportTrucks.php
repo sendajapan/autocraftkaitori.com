@@ -112,6 +112,10 @@ class ImportTrucks extends BaseController
             try {
                 $kaitoriDB->table('tbl_vehicles')->insert($data);
                 $imported++;
+                
+                // Import all images into tb_vehicle_pictures
+                $this->importVehicleImages($autocraftDB, $kaitoriDB, $truck['veh_id'], $featuredImage);
+                
             } catch (\Exception $e) {
                 $errors[] = "Error importing truck {$truck['veh_id']}: " . $e->getMessage();
             }
@@ -131,8 +135,40 @@ class ImportTrucks extends BaseController
         return $this->response->setJSON($result);
     }
 
-    // No longer needed - images are stored as external URLs
-    // from tb_aucnet_truck_pictures table
+    /**
+     * Import all vehicle images from tb_aucnet_truck_pictures to tb_vehicle_pictures
+     */
+    private function importVehicleImages($autocraftDB, $kaitoriDB, $vehId, $featuredImage)
+    {
+        // Get all images for this vehicle from autocraftjapan
+        $images = $autocraftDB->query("
+            SELECT pic_url FROM tb_aucnet_truck_pictures 
+            WHERE veh_id = ?
+        ", [$vehId])->getResultArray();
+        
+        if (empty($images)) {
+            // If no images in tb_aucnet_truck_pictures but featured_image exists,
+            // create a single entry for the featured image
+            if ($featuredImage) {
+                $kaitoriDB->table('tb_vehicle_pictures')->insert([
+                    'veh_id' => $vehId,
+                    'pic_url' => $featuredImage
+                ]);
+            }
+            return;
+        }
+        
+        // Insert all images into kaitori's tb_vehicle_pictures
+        foreach ($images as $image) {
+            $picUrl = $this->convertImageUrl($image['pic_url']);
+            if ($picUrl) {
+                $kaitoriDB->table('tb_vehicle_pictures')->insert([
+                    'veh_id' => $vehId,
+                    'pic_url' => $picUrl
+                ]);
+            }
+        }
+    }
 
     /**
      * Convert CloudFront or proxy URLs to direct source URLs
