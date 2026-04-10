@@ -227,7 +227,27 @@ class Stock extends BaseController
             }
 
 
-            $where = ['display_website' => 1, 'year>=' => $year_from, 'year<=' => $year_to, 'fob_price>=' => $price[0], 'fob_price<=' => $price[1], 'cc>=' => $cc[0], 'cc<=' => $cc[1], 'mileage>=' => $mileage[0], 'mileage<=' => $mileage[1]];
+            // Only add range conditions if user actually selected them (not just defaults)
+            $where = ['display_website' => 1];
+            
+            if($this->request->getPost('year_from')){
+                $where['year>='] = $year_from;
+            }
+            if($this->request->getPost('year_to')){
+                $where['year<='] = $year_to;
+            }
+            if($this->request->getPost('amount')){
+                $where['fob_price>='] = $price[0];
+                $where['fob_price<='] = $price[1];
+            }
+            if($this->request->getPost('cc')){
+                $where['cc>='] = $cc[0];
+                $where['cc<='] = $cc[1];
+            }
+            if($this->request->getPost('km')){
+                $where['mileage>='] = $mileage[0];
+                $where['mileage<='] = $mileage[1];
+            }
              
         }else{
            $where = ['display_website' => 1]; 
@@ -296,14 +316,19 @@ class Stock extends BaseController
      }
         
                 
+        // DEBUG: Check search values - REMOVED
+        // var_dump(['session_array' => $session_array, 'search' => $search, 'where' => $where]); die();
+        
+        // DEBUG removed
+        
         $data = [
-            "stock" => $this->vehModel->like($session_array,'','before')
+            "stock" => $this->vehModel->like($session_array,'','both')
                 ->where($where)
                 ->orderBy('featured_image', 'DESC')
                 ->orderBy($orderby)
                 ->paginate($perPage),
             "pager" => $this->vehModel->pager,
-            "found"=> $this->vehModel->like($session_array,'','before')->where($where)->countAllResults(),
+            "found"=> $this->vehModel->like($session_array,'','both')->where($where)->countAllResults(),
             //drop down filters
             "makes" => $this->vehModel->distinct()->where('make<>','')->orderBy('make','ASC')->findColumn('make'),
             "body_types" => $this->vehModel->where('body_type<>','')->distinct()->orderBy('body_type','ASC')->findColumn('body_type'),
